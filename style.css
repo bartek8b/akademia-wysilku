@@ -1,0 +1,126 @@
+* {
+	box-sizing: border-box;
+}
+/* *::selection{
+	color: hsl(33, 100%, 85%);
+	background-color: hsl(25, 50%, 54%);
+} */
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header{ 
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+}
+#logo{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 60%);
+    transition: background-color 0.7s ease;
+}
+#logo:hover{
+    background-color: hsl(0, 0%, 80%);
+}
+#logo img{
+    max-height: 80px;
+}
+#nawigacja{
+    width: 80%;
+    align-items: center;
+    text-align: center;
+}
+#nazwaFirmy{
+    display: flex;
+    background-color: hsl(0, 0%, 80%);
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: large;
+    text-shadow: 1.5px 1.5px 1.5px hsl(0, 0%, 80%), -1.5px -1.5px 1.5px hsl(0, 0%, 60%);
+}
+#navi{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 0%, 80%);
+}
+.naviButton{
+    color: black;
+    font-size: medium;
+    width: 25%;
+    text-decoration: none;
+    padding: 5px;
+    transition: background-color 0.7s ease;
+}
+.naviButton:hover{
+    background-color: hsl(0, 0%, 60%);
+}
+#copyrights{
+    float: right;
+    text-decoration: none;
+    margin-right: 20px;
+}
+footer{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: hsl(0, 0%, 80%);
+}
+footer i{
+	padding-top: 20px;
+	padding-left: 40px;
+    color: hsl(0, 0%, 40%);
+	float: left;
+    transition: color 0.7s ease;
+}
+footer i:hover{
+    color: black;
+}
+footer p{
+	color: hsl(0, 0%, 60%);
+	float: right;
+	padding-right: 20px;
+    font-size: small;
+}
+
+
+@media (width <= 767px) {
+    #nazwaFirmy{
+        display: none;
+    }
+    #navi{
+        height: 78px;
+        flex-wrap: wrap;
+    }
+    header{
+        height: 78px;
+        position: sticky;
+        top: 0px;
+    }
+    #nawigacja{
+        height: 78px;
+    }
+    #logo{
+        width: 25%;
+        background-color: hsl(0, 0%, 60%);
+    }
+    #logo:hover{
+        background-color: hsl(0, 0%, 80%);
+    }
+    #logo img{
+        height: 65px;
+    }
+    .naviButton{
+        width: 50%;
+        height: 50%;
+        padding-top: 10px;
+    }
+}
+
+/* .navi div {
+    width: 33.33%;
+    float: left;
+} */
