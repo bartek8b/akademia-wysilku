@@ -8,6 +8,11 @@
 body{
     margin: 0;
     font-family: Arial, sans-serif;
+    background-image: url(images/background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size :cover;
 }
 header{ 
     position: sticky;
@@ -21,10 +26,12 @@ header{
     justify-content: center;
     align-items: center;
     background-color: hsl(0, 0%, 60%);
-    transition: background-color 0.7s ease;
+    transition: background-color 0.5s ease;
 }
 #logo:hover{
-    background-color: hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 70%);
+    animation-name: colorChange;
+    animation-duration: 0.5s;
 }
 #logo img{
     max-height: 80px;
@@ -36,7 +43,7 @@ header{
 }
 #nazwaFirmy{
     display: flex;
-    background-color: hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 70%);
     justify-content: center;
     font-family: 'Segoe UI', sans-serif;
     font-size: large;
@@ -45,7 +52,7 @@ header{
 #navi{
     display: flex;
     justify-content: center;
-    background-color: hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 60%);
 }
 .naviButton{
     color: black;
@@ -53,10 +60,17 @@ header{
     width: 25%;
     text-decoration: none;
     padding: 5px;
-    transition: background-color 0.7s ease;
+    transition: background-color 0.5s ease;
 }
 .naviButton:hover{
-    background-color: hsl(0, 0%, 60%);
+    background-color: hsl(0, 0%, 70%);
+    animation-name: colorChange;
+    animation-duration: 0.5s;
+}
+main{
+    color: hsl(0, 0%, 80%);
+    margin: 10px;
+    margin-bottom: 60px;
 }
 #copyrights{
     float: right;
@@ -67,12 +81,12 @@ footer{
     width: 100vw;
     position: fixed;
     bottom: 0;
-    background-color: hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 60%);
 }
 footer i{
 	padding-top: 20px;
 	padding-left: 40px;
-    color: hsl(0, 0%, 40%);
+    color: hsl(0, 0%, 30%);
 	float: left;
     transition: color 0.7s ease;
 }
@@ -80,10 +94,16 @@ footer i:hover{
     color: black;
 }
 footer p{
-	color: hsl(0, 0%, 60%);
+	color: hsl(0, 0%, 40%);
 	float: right;
 	padding-right: 20px;
     font-size: small;
+}
+
+@keyframes colorChange{
+    0%{background-color: hsl(0, 0%, 60%)}
+    50%{background-color: hsl(0, 0%, 80%)}
+    100%{background-color: hsl(0, 0%, 70%)}
 }
 
 
@@ -105,10 +125,6 @@ footer p{
     }
     #logo{
         width: 25%;
-        background-color: hsl(0, 0%, 60%);
-    }
-    #logo:hover{
-        background-color: hsl(0, 0%, 80%);
     }
     #logo img{
         height: 65px;
@@ -119,8 +135,3 @@ footer p{
         padding-top: 10px;
     }
 }
-
-/* .navi div {
-    width: 33.33%;
-    float: left;
-} */
