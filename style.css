@@ -12,29 +12,41 @@ body{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	background-size :cover;
+	background-size:cover;
 }
 header{ 
     position: sticky;
     top: 0px;
     display: flex;
     flex-direction: row;
+    background-color: hsl(0, 0%, 60%);
 }
-#logo{
+.logo{
     display: flex;
     width: 20%;
     justify-content: center;
     align-items: center;
     background-color: hsl(0, 0%, 60%);
-    transition: background-color 0.5s ease;
+    transition: background-color 0.7s ease;
+    transition: border-radius 0.7s ease;
 }
-#logo:hover{
-    background-color: hsl(0, 0%, 70%);
+.logo:hover{
+    background-color: hsl(0, 0%, 80%);
     animation-name: colorChange;
-    animation-duration: 0.5s;
+    animation-duration: 0.7s;
+    border-radius: 20px;
 }
-#logo img{
-    max-height: 80px;
+.logo img{
+    max-height: 70px;
+}
+#activeLogo{
+    background-color: hsl(0, 0%, 70%);
+    animation: none;
+}
+#activeLogo:hover{
+    background-color: hsl(0, 0%, 70%);
+    animation: none;
+    border-radius: 0px;
 }
 #nawigacja{
     width: 80%;
@@ -52,6 +64,7 @@ header{
 #navi{
     display: flex;
     justify-content: center;
+    align-items: stretch;
     background-color: hsl(0, 0%, 60%);
 }
 .naviButton{
@@ -60,17 +73,24 @@ header{
     width: 25%;
     text-decoration: none;
     padding: 5px;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.7s ease;
+    transition: border-radius 0.7s ease;
 }
 .naviButton:hover{
-    background-color: hsl(0, 0%, 70%);
+    background-color: hsl(0, 0%, 80%);
     animation-name: colorChange;
-    animation-duration: 0.5s;
+    animation-duration: 0.7s;
+    border-radius: 20px;
+}
+#active{
+    background-color: hsl(0, 0%, 70%);
+    border-radius: 20px;
+    animation: none;
 }
 main{
     color: hsl(0, 0%, 80%);
     margin: 10px;
-    margin-bottom: 60px;
+    padding-bottom: 30px;
 }
 #copyrights{
     float: right;
@@ -102,8 +122,8 @@ footer p{
 
 @keyframes colorChange{
     0%{background-color: hsl(0, 0%, 60%)}
-    50%{background-color: hsl(0, 0%, 80%)}
-    100%{background-color: hsl(0, 0%, 70%)}
+    50%{background-color: hsl(0, 0%, 70%)}
+    100%{background-color: hsl(0, 0%, 80%)}
 }
 
 
