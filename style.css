@@ -10,9 +10,8 @@ body{
     font-family: Arial, sans-serif;
     background-image: url(images/background.jpg);
 	background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
 	background-attachment: fixed;
-    bottom: 0px; /* ???????????????? */
 	background-size:cover;
 }
 header{ 
@@ -82,18 +81,13 @@ header{
 }
 main{
     color: hsl(0, 0%, 80%);
-    margin: 10px;
-    padding-bottom: 30px;
-}
-#copyrights{
-    float: right;
-    text-decoration: none;
-    margin-right: 20px;
+    margin: 20px;
 }
 footer{
-    width: 100vw;
-    position: fixed;
-    bottom: 0;
+    display: flex;
+    width: 100%;
+    position: sticky;
+    bottom: 0px;
     background-color: hsl(0, 0%, 60%);
 }
 footer i{
@@ -109,8 +103,14 @@ footer i:hover{
 footer p{
 	color: hsl(0, 0%, 40%);
 	float: right;
-	padding-right: 20px;
     font-size: small;
+    margin-right: 40px;
+}
+#socials{
+    width: 50%;
+}
+#copyrights{
+    width: 50%;
 }
 
 @keyframes colorChange{
