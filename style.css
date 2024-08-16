@@ -17,7 +17,7 @@ body{
 header{
     position: sticky;
     top: 0px;
-    background-color: hsl(0, 0%, 60%);
+    background: linear-gradient(to left, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
     border-radius: 20px;
 }
 nav ul{
@@ -27,7 +27,6 @@ nav ul{
     list-style: none;
 }
 nav li{
-    display: flex;
     font-size: larger;
 }
 nav li:hover{
@@ -54,7 +53,7 @@ nav a{
     justify-content: space-around;
     font-weight: bold;
     font-size: large;
-    text-shadow: -1.5px -1.5px 2px hsl(0, 0%, 80%);
+    text-shadow: -1px -1px 1px hsl(0, 0%, 80%);
 }
 #menuButton{
     display: none;
@@ -89,8 +88,6 @@ nav a{
     text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
 }
 #logo{
-    display: flex;
-    justify-content: space-around;
     width: 14%;
 }
 .link{
@@ -118,7 +115,7 @@ footer{
     width: 100%;
     position: sticky;
     bottom: 0px;
-    background-color: hsla(0, 0%, 60%);
+    background: linear-gradient(to right, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
     border-radius: 20px;
 }
 footer i{
@@ -151,7 +148,7 @@ footer p{
     right: 0;
     height: 100%;
     width: 50%;
-    background-color: hsl(0, 0%, 40%);
+    background: linear-gradient(to bottom, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
     justify-content: flex-start;
     border-radius: 20px;
     margin-top: 50px;
