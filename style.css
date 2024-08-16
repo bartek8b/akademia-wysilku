@@ -28,6 +28,7 @@ nav ul{
 }
 nav li{
     font-size: larger;
+    text-shadow: -1.5px -1.5px 2px hsl(0, 0%, 40%);
 }
 nav li:hover{
     background-color: hsl(0, 0%, 80%);
@@ -63,6 +64,7 @@ nav a{
     align-items: center;
     margin-right: 30px;
     padding: 10px;
+    text-shadow: -1px -1px 1px hsl(0, 0%, 80%);
 }
 #xButton{
     display: none;
@@ -72,6 +74,7 @@ nav a{
     align-items: center;
     margin-right: 30px;
     padding: 10px;
+    text-shadow: -1px -1px 1px hsl(0, 0%, 80%);
 }
 #menuButton:hover{
     background-color: hsl(0, 0%, 80%);
