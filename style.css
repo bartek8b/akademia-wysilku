@@ -34,6 +34,7 @@ nav li:hover{
     animation-name: colorChange;
     animation-duration: 0.7s;
     border-radius: 20px;
+    text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
 }
 nav a{
     display: flex;
@@ -53,6 +54,7 @@ nav a{
     justify-content: center;
     font-weight: bold;
     font-size: large;
+    text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 80%), -1.5px -1.5px 2px hsl(0, 0%, 80%);
 }
 #menuButton{
     display: none;
@@ -61,14 +63,30 @@ nav a{
     cursor: pointer;
     align-items: center;
     margin-right: 30px;
+    padding: 10px;
 }
-#XButton{
+#xButton{
     display: none;
     text-decoration: none;
     color: black; 
     cursor: pointer;
     align-items: center;
     margin-right: 30px;
+    padding: 10px;
+}
+#menuButton:hover{
+    background-color: hsl(0, 0%, 80%);
+    animation-name: colorChange;
+    animation-duration: 0.7s;
+    border-radius: 5px;
+    text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
+}
+#xButton:hover{
+    background-color: hsl(0, 0%, 80%);
+    animation-name: colorChange;
+    animation-duration: 0.7s;
+    border-radius: 5px;
+    text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
 }
 #logo{
     display: flex;
@@ -86,7 +104,8 @@ nav a{
 }
 #active{
     border-radius: 20px;
-    background-color: hsl(0, 0%, 70%)
+    background-color: hsl(0, 0%, 70%);
+    text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
 }
 main{
     color: hsl(0, 0%, 80%);
@@ -131,9 +150,9 @@ footer p{
     top: 0;
     right: 0;
     height: 100vh;
-    width: 250px;
+    width: 50%;
     z-index: 999;
-    background-color: hsla(0, 0%, 20%, 0.2);
+    background-color: hsla(0, 0%, 100%, 0.2);
     backdrop-filter: blur(15px);
     justify-content: flex-start;
     border-radius: 20px;
@@ -147,7 +166,6 @@ footer p{
     width: 100%;
     height: 50px;
 }
-
 @keyframes colorChange{
     0%{background-color: hsl(0, 0%, 60%)}
     25%{background-color: hsl(0, 0%, 65%)}
@@ -157,12 +175,21 @@ footer p{
 }
 
 @media (767px <= width <= 1023px) {
+    #sideBar{
+        display: none;
+    }
     nav li{
         width: 20%;
         height: 50px;
     }
     #logo img{
         height: 50px;
+    }
+    #nazwaFirmy{
+        display: none;
+    }
+    #menuButton{
+        display: none;
     }
 }
 @media (width < 767px) {
