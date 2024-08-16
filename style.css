@@ -28,6 +28,7 @@ nav ul{
 }
 nav li{
     display: flex;
+    font-size: larger;
 }
 nav li:hover{
     background-color: hsl(0, 0%, 80%);
@@ -181,6 +182,7 @@ footer p{
     nav li{
         width: 20%;
         height: 50px;
+        font-size: medium;
     }
     #logo img{
         height: 50px;
@@ -198,6 +200,9 @@ footer p{
     }
     .link{
         display: none;
+    }
+    nav li{
+        font-size: medium;
     }
     nav ul{
         height: 30px;
