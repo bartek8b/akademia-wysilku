@@ -1,10 +1,10 @@
 * {
 	box-sizing: border-box;
 }
-/* *::selection{
-	color: hsl(33, 100%, 85%);
-	background-color: hsl(25, 50%, 54%);
-} */
+*::selection{
+	color: black;
+    background-color: hsl(0, 0%, 40%);
+}
 body{
     margin: 0;
     font-family: Arial, sans-serif;
@@ -14,74 +14,83 @@ body{
 	background-attachment: fixed;
 	background-size: cover;
 }
-header{ 
+header{
     position: sticky;
     top: 0px;
-    display: flex;
-    flex-direction: row;
     background-color: hsl(0, 0%, 60%);
-}
-.logo{
-    display: flex;
-    width: 20%;
-    justify-content: center;
-    align-items: center;
-    background-color: hsl(0, 0%, 60%);
-    transition: background-color 0.7s ease;
-    transition: border-radius 0.7s ease;
     border-radius: 20px;
 }
-.logo:hover{
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display: flex;
+}
+nav li:hover{
     background-color: hsl(0, 0%, 80%);
     animation-name: colorChange;
     animation-duration: 0.7s;
     border-radius: 20px;
 }
-.logo img{
-    max-height: 60px;
-}
-#nawigacja{
-    width: 80%;
+nav a{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
-    text-align: center;
+    text-decoration: none;
+    color: black; 
 }
 #nazwaFirmy{
-    display: flex;
-    background-color: hsl(0, 0%, 70%);
+    display: none;
+    position: fixed;
+    left: 50px;
+    top: 6px;
+    align-items: center;
     justify-content: center;
-    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
     font-size: large;
-    text-shadow: 1.5px 1.5px 1.5px hsl(0, 0%, 80%), -1.5px -1.5px 1.5px hsl(0, 0%, 60%);
 }
-#navi{
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    background-color: hsl(0, 0%, 60%);
-}
-.naviButton{
-    color: black;
-    font-size: medium;
-    width: 25%;
+#menuButton{
+    display: none;
     text-decoration: none;
-    padding: 5px;
-    transition: background-color 0.7s ease;
-    transition: border-radius 0.7s ease;
-    border-radius: 20px;
+    color: black; 
+    cursor: pointer;
+    align-items: center;
+    margin-right: 30px;
 }
-.naviButton:hover{
-    background-color: hsl(0, 0%, 80%);
-    animation-name: colorChange;
-    animation-duration: 0.7s;
-    border-radius: 20px;
+#XButton{
+    display: none;
+    text-decoration: none;
+    color: black; 
+    cursor: pointer;
+    align-items: center;
+    margin-right: 30px;
+}
+#logo{
+    display: flex;
+    justify-content: space-around;
+    width: 14%;
+}
+.link{
+    width: 21.5%;
+}
+#logo img{
+    width: auto;
+    height: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 #active{
-    border: 2px solid hsl(0, 0%, 70%);
     border-radius: 20px;
+    background-color: hsl(0, 0%, 70%)
 }
 main{
     color: hsl(0, 0%, 80%);
-    margin: 10px 20px;
+    padding: 10px 20px;
     overflow: hidden;
     text-align: justify;
 }
@@ -90,7 +99,8 @@ footer{
     width: 100%;
     position: sticky;
     bottom: 0px;
-    background-color: hsl(0, 0%, 60%);
+    background-color: hsla(0, 0%, 60%);
+    border-radius: 20px;
 }
 footer i{
 	padding-top: 20px;
@@ -114,38 +124,62 @@ footer p{
 #copyrights{
     width: 50%;
 }
+#sideBar{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: hsla(0, 0%, 20%, 0.2);
+    backdrop-filter: blur(15px);
+    justify-content: flex-start;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+#sideBar li{
+    width: 100%;
+    height: 50px;
+}
+#sideBar a{
+    width: 100%;
+    height: 50px;
+}
 
 @keyframes colorChange{
     0%{background-color: hsl(0, 0%, 60%)}
+    25%{background-color: hsl(0, 0%, 65%)}
     50%{background-color: hsl(0, 0%, 70%)}
+    75%{background-color: hsl(0, 0%, 75%)}
     100%{background-color: hsl(0, 0%, 80%)}
 }
 
-@media (width <= 767px) {
-    #nazwaFirmy{
-        display: none;
-    }
-    #navi{
-        height: 78px;
-        flex-wrap: wrap;
-    }
-    header{
-        height: 78px;
-        position: sticky;
-        top: 0px;
-    }
-    #nawigacja{
-        height: 78px;
-    }
-    #logo{
-        width: 25%;
+@media (767px <= width <= 1023px) {
+    nav li{
+        width: 20%;
+        height: 50px;
     }
     #logo img{
-        height: 65px;
+        height: 50px;
     }
-    .naviButton{
-        width: 50%;
-        height: 50%;
-        padding-top: 10px;
+}
+@media (width < 767px) {
+    #logo{
+        display: none;
+    }
+    .link{
+        display: none;
+    }
+    nav ul{
+        height: 30px;
+        flex-direction: row-reverse;
+    }
+    #nazwaFirmy{
+        display: flex;
+    }
+    #menuButton{
+        display: flex;
     }
 }

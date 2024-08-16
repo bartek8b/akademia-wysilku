@@ -11,23 +11,34 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo"> <!-- id="activeLogo" -->
-            <div>
-            <img src="images/logoFirmy.png" alt="logo firmy">
-        </div>
-        </a>
+        <nav>
+            <ul>
+                <li class="link"><a href="">O mnie</a></li>
+                <li class="link"><a href="">Oferta</a></li>
+                <li id="logo"><a href="index.html" id="active">
+                    <img src="images/logoFirmy.png" alt="logo firmy">
+                </a></li>
+                <li class="link"><a href="">Kontakt</a></li>
+                <li class="link"><a href="">Współpraca</a></li>
+                <div id="nazwaFirmy">Akademia Wysiłku</div>
+                <div id="menuButton" onclick="showSidebar()"><i class="fa-solid fa-bars fa-xl"></i></div>
+                <div id="XButton" onclick="hideSidebar()"><i class="fa-solid fa-x fa-xl"></i></div>
+            </ul>
+            <ul id="sideBar">
+                <li><a href="index.html" id="active">Home</a></li>
+                <li><a href="">O mnie</a></li>
+                <li><a href="">Oferta</a></li>
+                <li><a href="">Kontakt</a></li>
+                <li><a href="">Współpraca</a></li>
+                <br>
+                <br>
+                <img src="images/logoFirmy.png" alt="logo firmy" style="height: 80px; margin: auto; margin-top: 20px;">
+                <br>
 
-        <div id="nawigacja">
-            <div id="nazwaFirmy"><p>AKADEMIA WYSIŁKU - WOJCIECH CZAJKOWSKI</p></div>
-            <div id="navi">
-                <a href="" class="naviButton" id="active">O mnie</a>
-                <a href="" class="naviButton">Oferta</a>
-                <a href="" class="naviButton">Kontakt</a>
-                <a href="" class="naviButton">Współpraca</a> <!-- a/  id="active" -->
-            </div>
-        </div>
+            </ul>
+        </nav>
     </header>
-    
+
     <main>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, deleniti. Incidunt mollitia ducimus molestiae quaerat voluptate blanditiis vel tempora maiores pariatur ex eius, nam ea, eaque atque repellendus, neque iusto.
         Cum debitis quas reiciendis at eligendi saepe cumque officia quo explicabo. Sunt maiores provident consequuntur voluptates dolorum, distinctio, tempore, modi quas neque perferendis rem debitis ratione vero non enim nemo?
