@@ -54,7 +54,7 @@ nav a{
     justify-content: space-around;
     font-weight: bold;
     font-size: large;
-    text-shadow: -1px -1px 1px hsl(0, 0%, 80%);
+    text-shadow: 1px 1px 1px hsl(0, 0%, 80%);
 }
 #menuButton{
     display: none;
