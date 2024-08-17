@@ -110,13 +110,14 @@ nav a{
 main{
     color: hsl(0, 0%, 80%);
     padding: 10px 20px;
+    padding-bottom: 50px;
     overflow: hidden;
     text-align: justify;
 }
 footer{
     display: flex;
     width: 100%;
-    position: sticky;
+    position: fixed;
     bottom: 0px;
     background: linear-gradient(to right, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
     border-radius: 20px;
@@ -149,13 +150,11 @@ footer p{
     position: fixed;
     top: 0;
     right: 0;
-    height: 100%;
+    height: auto;
     width: 50%;
     background: linear-gradient(to bottom, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
-    justify-content: flex-start;
     border-radius: 20px;
     margin-top: 50px;
-    margin-bottom: 50px;
     overflow: auto;
 }
 #sideBar li{
@@ -165,7 +164,9 @@ footer p{
 #sideBar a{
     width: 100%;
     height: 50px;
+    text-shadow: 1px 1px 1px hsl(0, 0%, 40%);
 }
+
 @keyframes colorChange{
     0%{background-color: hsl(0, 0%, 60%)}
     25%{background-color: hsl(0, 0%, 65%)}
