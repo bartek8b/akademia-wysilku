@@ -98,7 +98,7 @@ nav a{
 }
 #logo img{
     width: auto;
-    height: 80px;
+    height: 60px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -180,7 +180,6 @@ footer p{
     }
     nav li{
         width: 20%;
-        height: 50px;
         font-size: medium;
     }
     #logo img{
@@ -200,9 +199,9 @@ footer p{
     .link{
         display: none;
     }
-
     nav li{
         font-size: medium;
+        flex-direction: row-reverse;
     }
     nav ul{
         height: 50px;
