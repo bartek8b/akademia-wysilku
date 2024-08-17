@@ -18,7 +18,7 @@ header{
     position: sticky;
     top: 0px;
     background: linear-gradient(to left, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
-    border-radius: 20px;
+    border-radius: 10px;
 }
 nav ul{
     display: flex;
@@ -34,7 +34,7 @@ nav li:hover{
     background-color: hsl(0, 0%, 80%);
     animation-name: colorChange;
     animation-duration: 0.7s;
-    border-radius: 20px;
+    border-radius: 10px;
     text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
 }
 nav a{
@@ -80,15 +80,15 @@ nav a{
     background-color: hsl(0, 0%, 80%);
     animation-name: colorChange;
     animation-duration: 0.7s;
-    border-radius: 5px;
-    text-shadow: -1px 1px 1px hsl(0, 0%, 40%);
+    border-radius: 10px;
+    text-shadow: -1.5px -1.5px 2px hsl(0, 0%, 40%);
 }
 #xButton:hover{
     background-color: hsl(0, 0%, 80%);
     animation-name: colorChange;
     animation-duration: 0.7s;
-    border-radius: 5px;
-    text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
+    border-radius: 10px;
+    text-shadow: -1.5px -1.5px 2px hsl(0, 0%, 40%);
 }
 #logo{
     width: 14%;
@@ -103,7 +103,7 @@ nav a{
     padding-bottom: 5px;
 }
 #active{
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: hsl(0, 0%, 70%);
     text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
 }
@@ -120,7 +120,7 @@ footer{
     position: fixed;
     bottom: 0px;
     background: linear-gradient(to right, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
-    border-radius: 20px;
+    border-radius: 10px;
 }
 footer i{
 	padding-top: 20px;
@@ -153,7 +153,7 @@ footer p{
     height: auto;
     width: 50%;
     background: linear-gradient(to bottom, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 50px;
     overflow: auto;
 }
