@@ -106,7 +106,7 @@ main{
     justify-content: space-around;
 }
 #mainContainer div{
-    height: 200px;
+    height: 500px; /* -------------- TEMP */
     width: 30%;
     margin: 10px;
     background: linear-gradient(to bottom, hsla(0, 0%, 40%, 0.8), hsl(0, 0%, 60%, 0.8));
@@ -132,7 +132,6 @@ footer i{
         color: black;
     }
 }
-
 footer p{
 	color: hsl(0, 0%, 40%);
 	float: right;
@@ -194,13 +193,13 @@ footer p{
     #menuButton{
         display: none;
     }
-/* ------------------------ */
     #mainContainer{
         flex-direction: column;
         align-items: center;
     }
     #mainContainer div{
         width: 70%;
+        height: 300px; /* ------------ TEMP */
     }
 }
 @media (width < 767px) {
@@ -224,12 +223,13 @@ footer p{
     #menuButton{
         display: flex;
     }
-/* ------------------------ */
     #mainContainer{
         flex-direction: column;
         align-items: center;
     }
     #mainContainer div{
         width: 80%;
+        height: 400px; /* -------------- TEMP */
     }
 }
+
