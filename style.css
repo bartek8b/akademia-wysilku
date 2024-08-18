@@ -196,8 +196,8 @@ footer p{
         align-items: center;
     }
     #mainContainer div{
-        width: 70%;
-        height: 400px;  /* -------------- TEMP */
+        width: 90%;
+        height: 300px;  /* -------------- TEMP */
     }
 }
 @media (width < 767px) {
@@ -226,8 +226,8 @@ footer p{
         align-items: center;
     }
     #mainContainer div{
-        width: 90%;
-        height: 300px; /* -------------- TEMP */
+        width: 75%;
+        height: 400px; /* -------------- TEMP */
     }
 
 }
