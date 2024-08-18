@@ -18,7 +18,8 @@ header{
     position: sticky;
     top: 0px;
     background: linear-gradient(to left, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
-    border-radius: 10px;
+    border-radius: .7rem;
+    box-shadow: 1px 1px 1px hsl(0, 0%, 40%);
 }
 nav ul{
     display: flex;
@@ -27,14 +28,15 @@ nav ul{
     list-style: none;
 }
 nav li{
-    font-size: larger;
+    font-size: 1.1rem;
+    cursor: pointer;
     text-shadow: -1px -1px 1px hsl(0, 0%, 40%);
 }
 nav li:hover{
     background-color: hsl(0, 0%, 80%);
     animation-name: colorChange;
     animation-duration: 0.7s;
-    border-radius: 10px;
+    border-radius: .7rem;
     text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
 }
 nav a{
@@ -53,43 +55,27 @@ nav a{
     margin-top: 15px;
     justify-content: space-around;
     font-weight: bold;
-    font-size: large;
-    text-shadow: 1px 1px 1px hsl(0, 0%, 80%);
+    text-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 }
-#menuButton{
+#menuButton, #xButton{
     display: none;
+    font-size: 1.4rem;
     text-decoration: none;
     color: black; 
     cursor: pointer;
     align-items: center;
     margin-right: 30px;
     padding: 10px;
-    text-shadow: 1px 1px 1px hsl(0, 0%, 80%);
+    text-shadow: 1px 1px 1px hsl(0, 0%, 60%);
+    &:hover{
+        background-color: hsl(0, 0%, 80%);
+        animation-name: colorChange;
+        animation-duration: 0.7s;
+        border-radius: .7rem;
+        text-shadow: -1.5px -1.5px 2px hsl(0, 0%, 40%);
+    }
 }
-#xButton{
-    display: none;
-    text-decoration: none;
-    color: black; 
-    cursor: pointer;
-    align-items: center;
-    margin-right: 30px;
-    padding: 10px;
-    text-shadow: 1px 1px 1px hsl(0, 0%, 80%);
-}
-#menuButton:hover{
-    background-color: hsl(0, 0%, 80%);
-    animation-name: colorChange;
-    animation-duration: 0.7s;
-    border-radius: 10px;
-    text-shadow: -1.5px -1.5px 2px hsl(0, 0%, 40%);
-}
-#xButton:hover{
-    background-color: hsl(0, 0%, 80%);
-    animation-name: colorChange;
-    animation-duration: 0.7s;
-    border-radius: 10px;
-    text-shadow: -1.5px -1.5px 2px hsl(0, 0%, 40%);
-}
+
 #logo{
     width: 14%;
 }
@@ -102,17 +88,30 @@ nav a{
     padding-top: 5px;
     padding-bottom: 5px;
 }
-#active{
-    border-radius: 10px;
+#active{    
     background-color: hsl(0, 0%, 70%);
     text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
+    border-radius: .7rem;
 }
 main{
     color: hsl(0, 0%, 80%);
     padding: 10px 20px;
     padding-bottom: 50px;
     overflow: hidden;
-    text-align: justify;
+    text-align: left;
+}
+#mainContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#mainContainer div{
+    height: 200px;
+    width: 30%;
+    margin: 10px;
+    background: linear-gradient(to bottom, hsla(0, 0%, 40%, 0.8), hsl(0, 0%, 60%, 0.8));
+    border-radius: .7rem;
+    box-shadow: 1px 1px 1px hsl(0, 0%, 40%);
 }
 footer{
     display: flex;
@@ -120,7 +119,8 @@ footer{
     position: fixed;
     bottom: 0px;
     background: linear-gradient(to right, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
-    border-radius: 10px;
+    border-radius: .7rem;
+    box-shadow: 1px 1px 1px hsl(0, 0%, 80%);
 }
 footer i{
 	padding-top: 20px;
@@ -128,10 +128,11 @@ footer i{
     color: hsl(0, 0%, 30%);
 	float: left;
     transition: color 0.7s ease;
+    &:hover{
+        color: black;
+    }
 }
-footer i:hover{
-    color: black;
-}
+
 footer p{
 	color: hsl(0, 0%, 40%);
 	float: right;
@@ -151,11 +152,12 @@ footer p{
     top: 0;
     right: 0;
     height: auto;
-    width: 50%;
+    width: 60%;
     background: linear-gradient(to bottom, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
-    border-radius: 10px;
+    border-radius: .7rem;
     margin-top: 50px;
     overflow: auto;
+    box-shadow: 1px 1px 1px hsl(0, 0%, 40%);
 }
 #sideBar li{
     width: 100%;
@@ -192,6 +194,14 @@ footer p{
     #menuButton{
         display: none;
     }
+/* ------------------------ */
+    #mainContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    #mainContainer div{
+        width: 70%;
+    }
 }
 @media (width < 767px) {
     #logo{
@@ -213,5 +223,13 @@ footer p{
     }
     #menuButton{
         display: flex;
+    }
+/* ------------------------ */
+    #mainContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    #mainContainer div{
+        width: 80%;
     }
 }
