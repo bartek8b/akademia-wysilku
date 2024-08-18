@@ -197,7 +197,7 @@ footer p{
     }
     #mainContainer div{
         width: 70%;
-        height: 300px;  /* -------------- TEMP */
+        height: 400px;  /* -------------- TEMP */
     }
 }
 @media (width < 767px) {
@@ -227,7 +227,8 @@ footer p{
     }
     #mainContainer div{
         width: 90%;
-        height: 400px; /* -------------- TEMP */
+        height: 300px; /* -------------- TEMP */
     }
+
 }
 
