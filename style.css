@@ -10,7 +10,7 @@ body{
     font-family: Arial, sans-serif;
     background-image: url(images/background.jpg);
 	background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
 }
@@ -94,20 +94,18 @@ nav a{
 }
 main{
     color: hsl(0, 0%, 80%);
-    padding: 10px 20px;
-    padding-bottom: 50px;
-    overflow: hidden;
     text-align: left;
 }
 #mainContainer{
     display: flex;
+    padding: 20px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 #mainContainer div{
     height: 500px; /* -------------- TEMP */
     width: 30%;
-    margin: 10px;
+    margin: 20px;
     background: linear-gradient(to bottom, hsla(0, 0%, 40%, 0.8), hsl(0, 0%, 60%, 0.8));
     border-radius: .7rem;
     box-shadow: 1px 1px 1px hsl(0, 0%, 60%);
@@ -115,13 +113,13 @@ main{
 footer{
     display: flex;
     width: 100%;
-    bottom: 0px;
     background: linear-gradient(to right, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
     border-radius: .7rem;
 }
 footer i{
-	padding-top: 20px;
-	padding-left: 40px;
+	margin-top: 20px;
+	margin-left: 40px;
+    margin-bottom: 18px;
     color: hsl(0, 0%, 30%);
 	float: left;
     transition: color 0.7s ease;
@@ -130,11 +128,11 @@ footer i{
     }
 }
 footer p{
+    margin-right: 40px;
 	color: hsl(0, 0%, 40%);
 	float: right;
-    font-size: 0.7rem;
-    margin-right: 40px;
-}
+    font-size: 0.8rem;
+    }
 #socials{
     width: 50%;
 }
@@ -163,6 +161,9 @@ footer p{
     height: 50px;
     text-shadow: 1px 1px 1px hsl(0, 0%, 40%);
 }
+#sideBar i{
+    font-size: 1.2rem;
+}
 
 @keyframes colorChange{
     0%{background-color: hsl(0, 0%, 60%)}
@@ -190,12 +191,13 @@ footer p{
         display: none;
     }
     #mainContainer{
+        width: auto;
         flex-direction: column;
         align-items: center;
     }
     #mainContainer div{
         width: 70%;
-        height: 300px; /* ------------ TEMP */
+        height: 300px;  /* -------------- TEMP */
     }
 }
 @media (width < 767px) {
@@ -224,7 +226,7 @@ footer p{
         align-items: center;
     }
     #mainContainer div{
-        width: 80%;
+        width: 90%;
         height: 400px; /* -------------- TEMP */
     }
 }
