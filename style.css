@@ -19,7 +19,6 @@ header{
     top: 0px;
     background: linear-gradient(to left, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
     border-radius: .7rem;
-    box-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 }
 nav ul{
     display: flex;
@@ -116,11 +115,9 @@ main{
 footer{
     display: flex;
     width: 100%;
-    position: fixed;
     bottom: 0px;
     background: linear-gradient(to right, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
     border-radius: .7rem;
-    box-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 }
 footer i{
 	padding-top: 20px;
@@ -135,7 +132,7 @@ footer i{
 footer p{
 	color: hsl(0, 0%, 40%);
 	float: right;
-    font-size: small;
+    font-size: 0.7rem;
     margin-right: 40px;
 }
 #socials{
@@ -156,7 +153,6 @@ footer p{
     border-radius: .7rem;
     margin-top: 50px;
     overflow: auto;
-    box-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 }
 #sideBar li{
     width: 100%;
