@@ -19,7 +19,7 @@ header{
     top: 0px;
     background: linear-gradient(to left, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
     border-radius: .7rem;
-    box-shadow: 1px 1px 1px hsl(0, 0%, 40%);
+    box-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 }
 nav ul{
     display: flex;
@@ -31,13 +31,13 @@ nav li{
     font-size: 1.1rem;
     cursor: pointer;
     text-shadow: -1px -1px 1px hsl(0, 0%, 40%);
-}
-nav li:hover{
-    background-color: hsl(0, 0%, 80%);
-    animation-name: colorChange;
-    animation-duration: 0.7s;
-    border-radius: .7rem;
-    text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
+    &:hover{
+        background-color: hsl(0, 0%, 80%);
+        animation-name: colorChange;
+        animation-duration: 0.7s;
+        border-radius: .7rem;
+        text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
+    }
 }
 nav a{
     display: flex;
@@ -111,7 +111,7 @@ main{
     margin: 10px;
     background: linear-gradient(to bottom, hsla(0, 0%, 40%, 0.8), hsl(0, 0%, 60%, 0.8));
     border-radius: .7rem;
-    box-shadow: 1px 1px 1px hsl(0, 0%, 40%);
+    box-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 }
 footer{
     display: flex;
@@ -120,7 +120,7 @@ footer{
     bottom: 0px;
     background: linear-gradient(to right, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
     border-radius: .7rem;
-    box-shadow: 1px 1px 1px hsl(0, 0%, 80%);
+    box-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 }
 footer i{
 	padding-top: 20px;
@@ -157,7 +157,7 @@ footer p{
     border-radius: .7rem;
     margin-top: 50px;
     overflow: auto;
-    box-shadow: 1px 1px 1px hsl(0, 0%, 40%);
+    box-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 }
 #sideBar li{
     width: 100%;
