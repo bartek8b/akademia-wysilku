@@ -202,7 +202,7 @@ footer p{
 }
 @media (width < 767px) {
     body{
-        background-image: url(images/background_mobile.JPG);
+        background-image: url(images/background_mobile.jpg);
     }
     #logo{
         display: none;
