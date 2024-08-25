@@ -338,7 +338,7 @@ footer p{
 	#content1{
 		order: 2;
 		min-height: auto;
-		width: 75%;
+		width: 90%;
 	}
 	#content2{
 		order: 1;
@@ -348,6 +348,6 @@ footer p{
 	#content3{
 		order: 3;
 		min-height: auto;
-		width: 75%;
+		width: 90%;
 	}
 }
