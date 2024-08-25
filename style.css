@@ -288,7 +288,7 @@ footer p{
 	#content1{
 		order: 2;
 		min-height: auto;
-		width: 75dvw;	
+		width: 80dvw;	
 	}
 	#content2{
 		order: 1;
@@ -298,7 +298,7 @@ footer p{
 	#content3{
 		order: 3;
 		min-height: auto;
-		width: 75dvw;	
+		width: 80dvw;	
 	}
 	#content3 i, #content1 i{
 		width: 50%;
