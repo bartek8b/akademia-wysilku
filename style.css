@@ -52,9 +52,7 @@ nav a {
 #nazwaFirmy {
 	display: none;
 	position: absolute;
-	left: 50px;
-	margin-top: 15px;
-	justify-content: space-around;
+	left: 3rem;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 }
@@ -66,8 +64,8 @@ nav a {
 	color: black;
 	cursor: pointer;
 	align-items: center;
-	margin-right: 30px;
-	padding: 10px;
+	margin-right: 2rem;
+	padding: 1rem;
 	text-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 	&:hover {
 		background-color: hsl(0, 0%, 80%);
@@ -86,9 +84,9 @@ nav a {
 }
 #logo img {
 	width: auto;
-	height: 60px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	height: 4rem;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
 }
 #active{
 	background-color: hsl(0, 0%, 70%);
@@ -101,13 +99,14 @@ main {
 }
 #mainContainer {
 	display: flex;
-	padding: 20px;
+	padding: 1.5rem;
 	flex-direction: row;
 	justify-content: space-evenly;
 }
 #mainContainer > div {
-	margin: 20px;
-	padding: 30px 30px;
+	margin: 1.2rem;
+	padding: 2rem 2rem;
+	align-content: center;
 	overflow: visible;
 	color: black;
 	background: linear-gradient(
@@ -118,7 +117,6 @@ main {
 	border-radius: 0.7rem;
 	box-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 	display: flow-root;
-	align-content: center;
 }
 #mainContainer h5{
 	margin: 0;
@@ -132,7 +130,7 @@ main {
 	float: left;
 	text-align: center;
 	font-size: 2rem;
-	padding: 10px;
+	padding: 1rem;
 }
 #content2{
 	min-height: 75dvh;
@@ -141,18 +139,17 @@ main {
 #content1, #content3{
 	min-height: 68dvh;
 	width: 28dvw;
-	align-self:center;
-	
+	align-self:center;	
 }
 #profilePhoto{
 	width: 50%;
 	float: left;
-	margin-right: 10px;
-	margin-bottom: 10px;
+	margin-right: 0.7rem;
 	border-radius: 0.7rem;
 }
 #mainContainer div p{
-	margin: 0;
+	margin: 0;	
+	padding-top: 0.5rem;
 }
 #mainContainer div > a{
 	color: black;
@@ -171,7 +168,6 @@ main {
 	font-style: italic;
 	font-weight: normal;
 	font-size: 0.9rem;
-	padding-top: 10px;
 }
 footer {
 	display: flex;
@@ -183,8 +179,8 @@ footer {
 	border-radius: 0.7rem;
 }
 footer i{
-	margin-top: 20px;
-	margin-right: 30px;
+	margin-top: 1.3rem;
+	margin-right: 1.5rem;
 	color: hsl(0, 0%, 30%);
 	float: left;
 	transition: color 0.7s ease;
@@ -193,7 +189,7 @@ footer i{
 	}
 }
 footer p{
-	margin-right: 30px;
+	margin-right: 2rem;
 	color: hsl(0, 0%, 40%);
 	float: right;
 	font-size: 0.8rem;
@@ -202,7 +198,7 @@ footer p{
 	width: 50%;
 }
 #socials:first-child{
-	margin-left: 30px;
+	margin-left: 2rem;
 }
 #copyrights {
 	width: 50%;
@@ -220,7 +216,7 @@ footer p{
 		hsl(0, 0%, 40%),
 		hsl(0, 0%, 60%));
 	border-radius: 0.7rem;
-	margin-top: 50px;
+	margin-top: 3.15rem;
 	overflow: auto;
 	z-index: 1;
 	animation-name: showSideBar;
@@ -270,7 +266,7 @@ footer p{
 		font-size: medium;
 	}
 	#logo img {
-		height: 50px;
+		height: 3rem;
 	}
 	#nazwaFirmy {
 		display: none;
@@ -321,7 +317,7 @@ footer p{
 		flex-direction: row-reverse;
 	}
 	nav ul {
-		height: 50px;
+		height: 3rem;
 		flex-direction: row-reverse;
 	}
 	#nazwaFirmy {
@@ -339,7 +335,7 @@ footer p{
 		width: 90%;
 	}
 	footer i{
-		margin-right: 20px;
+		margin-right: 1rem;
 	}
 	#content1{
 		order: 2;
