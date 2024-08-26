@@ -224,11 +224,11 @@ footer p{
 }
 #sideBar li {
 	width: 100%;
-	height: 50px;
+	height: 3rem;
 }
 #sideBar a {
 	width: 100%;
-	height: 50px;
+	height: 3rem;
 	text-shadow: 1px 1px 1px hsl(0, 0%, 40%);
 }
 #sideBar i {
