@@ -140,8 +140,9 @@ main {
 }
 #content1, #content3{
 	min-height: 68dvh;
-	align-self:center;
 	width: 28dvw;
+	align-self:center;
+	
 }
 #profilePhoto{
 	width: 50%;

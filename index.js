@@ -16,7 +16,7 @@ function hideSidebar(){
 function updateWidth(){
     const windowWidth = window.innerWidth;
 
-    if(windowWidth >= 767){
+    if(windowWidth > 768){
         sidebar.style.display ='none';
         menuButton.style.display = 'none';
         xButton.style.display ='none';
