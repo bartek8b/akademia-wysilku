@@ -275,7 +275,6 @@ footer p{
 		display: none;
 	}
 	#mainContainer {
-		width: auto;
 		flex-direction: column;
 		align-items: center;
 	}
@@ -332,7 +331,7 @@ footer p{
 	}
 	#mainContainer > div {
 		min-height: auto;
-		width: 80dvw;
+		width: 85dvw;
 	}
 	footer i{
 		margin-right: 1rem;
