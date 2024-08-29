@@ -1,16 +1,29 @@
 const sidebar = document.querySelector('#sideBar');
 const menuButton = document.querySelector('#menuButton');
 const xButton = document.querySelector('#xButton');
+window.addEventListener("resize", updateWidth);
 
 function showSidebar(){
     sidebar.style.display ='flex';
     menuButton.style.display = 'none';
     xButton.style.display ='flex';
+
+    sidebar.animate([
+        {transform: 'translateX(100%)'},
+        {transform: 'translateX(0)'}],
+        {duration: 500, fill: 'forwards'});
 }
+
 function hideSidebar(){
-    sidebar.style.display ='none';
     menuButton.style.display = 'flex';
     xButton.style.display ='none';
+
+    sidebar.animate([
+        {transform: 'translateX(0)'},
+        {transform: 'translateX(100%)'}],
+        {duration: 500, fill: 'forwards'});
+    
+    updateWidth();
 }
 
 function updateWidth(){
@@ -22,10 +35,12 @@ function updateWidth(){
         xButton.style.display ='none';
     }
     else{
-        sidebar.style.display ='none';
         menuButton.style.display = 'flex';
         xButton.style.display ='none';
     }
 }
 
-window.addEventListener("resize", updateWidth);
+
+
+
+

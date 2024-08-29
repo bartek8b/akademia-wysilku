@@ -29,13 +29,13 @@ nav ul {
 	list-style: none;
 }
 nav li {
-	font-size: 1.1rem;
+	font-size: 1rem;
 	cursor: pointer;
 	text-shadow: -1px -1px 1px hsl(0, 0%, 40%);
 	&:hover {
 		background-color: hsl(0, 0%, 80%);
 		animation-name: colorChange;
-		animation-duration: 0.7s;
+		animation-duration: 0.5s;
 		border-radius: 0.7rem;
 		text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
 	}
@@ -70,7 +70,7 @@ nav a {
 	&:hover {
 		background-color: hsl(0, 0%, 80%);
 		animation-name: colorChange;
-		animation-duration: 0.7s;
+		animation-duration: 0.5s;
 		border-radius: 0.7rem;
 		text-shadow: -1.5px -1.5px 2px hsl(0, 0%, 40%);
 	}
@@ -84,7 +84,7 @@ nav a {
 }
 #logo img {
 	width: auto;
-	height: 4rem;
+	height: 3rem;
 	padding-top: 0.3rem;
 	padding-bottom: 0.3rem;
 }
@@ -219,8 +219,6 @@ footer p{
 	margin-top: 3rem;
 	overflow: auto;
 	z-index: 1;
-	animation-name: showSideBar;
-	animation-duration: .7s;
 }
 #sideBar li {
 	width: 100%;
@@ -251,29 +249,8 @@ footer p{
 	100% {
 		background-color: hsl(0, 0%, 80%);
 	}
-
 }
-@keyframes showSideBar{
-	from{transform: translateX(100%)}
-}
-
 @media (768px < width <= 1024px) {
-	#sideBar {
-		display: none;
-	}
-	nav li {
-		width: 20%;
-		font-size: medium;
-	}
-	#logo img {
-		height: 3rem;
-	}
-	#nazwaFirmy {
-		display: none;
-	}
-	#menuButton {
-		display: none;
-	}
 	#mainContainer {
 		flex-direction: column;
 		align-items: center;
