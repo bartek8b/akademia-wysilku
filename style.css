@@ -36,7 +36,7 @@ nav li {
 	&:hover {
 		background-color: hsl(0, 0%, 80%);
 		animation-name: colorChange;
-		animation-duration: 0.5s;
+		animation-duration: .5s;
 		border-radius: 0.7rem;
 		text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
 	}
@@ -118,7 +118,7 @@ main {
 	box-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 	display: flow-root;
 	animation-name: opacityChange;
-	animation-duration: 2s;
+	animation-duration: 3s;
 }
 #mainContainer h5{
 	margin: 0;
@@ -237,19 +237,10 @@ footer p{
 }
 
 @keyframes colorChange {
-	0% {
+	from {
 		background-color: hsl(0, 0%, 60%);
 	}
-	25% {
-		background-color: hsl(0, 0%, 65%);
-	}
-	50% {
-		background-color: hsl(0, 0%, 70%);
-	}
-	75% {
-		background-color: hsl(0, 0%, 75%);
-	}
-	100% {
+	to {
 		background-color: hsl(0, 0%, 80%);
 	}
 }
