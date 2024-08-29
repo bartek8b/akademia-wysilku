@@ -1,7 +1,6 @@
 const sidebar = document.querySelector('#sideBar');
 const menuButton = document.querySelector('#menuButton');
 const xButton = document.querySelector('#xButton');
-window.addEventListener("resize", updateWidth);
 
 function showSidebar(){
     sidebar.style.display ='flex';
@@ -39,6 +38,8 @@ function updateWidth(){
         xButton.style.display ='none';
     }
 }
+
+window.addEventListener("resize", updateWidth);
 
 
 
