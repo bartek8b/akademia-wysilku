@@ -206,8 +206,8 @@ footer p{
 	width: 60dvw;
 	background: linear-gradient(
 		to bottom,
-		hsl(0, 0%, 40%),
-		hsl(0, 0%, 60%));
+		hsl(0, 0%, 60%),
+		hsl(0, 0%, 40%));
 	border-radius: 0.7rem;
 	margin-top: 3rem;
 	overflow: auto;
