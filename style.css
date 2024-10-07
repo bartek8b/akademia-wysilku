@@ -1,3 +1,4 @@
+/* -------------------OGÓLNE I LANDING PAGE------------------ */
 * {
 	box-sizing: border-box;
 }
@@ -32,6 +33,7 @@ nav ul {
 nav li {
 	font-size: 1rem;
 	cursor: pointer;
+	width: 20%;
 	text-shadow: -1px -1px 1px hsl(0, 0%, 40%);
 	&:hover {
 		background-color: hsl(0, 0%, 80%);
@@ -76,19 +78,13 @@ nav a {
 		text-shadow: -1.5px -1.5px 2px hsl(0, 0%, 40%);
 	}
 }
-#logo {
-	width: 14%;
-}
-.link {
-	width: 21.5%;
-}
 #logo img {
 	width: auto;
 	height: 3rem;
 	padding-top: 0.3rem;
 	padding-bottom: 0.3rem;
 }
-#active{
+.active{
 	background-color: hsl(0, 0%, 70%);
 	text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
 	border-radius: 0.7rem;
@@ -106,7 +102,10 @@ main {
 #mainContainer > div {
 	margin: 1.2rem;
 	padding: 2rem 2rem;
-	align-content: center;
+	min-height: 75dvh;
+	width: 28dvw;
+	align-content: space-around;
+	align-self: center;	
 	overflow: visible;
 	color: black;
 	background: linear-gradient(
@@ -134,15 +133,6 @@ main {
 	font-size: 2rem;
 	padding: 1rem;
 }
-#content2{
-	min-height: 75dvh;
-	width: 34dvw;
-}
-#content1, #content3{
-	min-height: 68dvh;
-	width: 28dvw;
-	align-self:center;	
-}
 #profilePhoto{
 	width: 50%;
 	float: left;
@@ -156,7 +146,7 @@ main {
 #mainContainer div > a{
 	color: black;
 }
-#content3 i{
+#landingContent3 i{
 	&:hover {
 		background-color: hsl(0, 0%, 80%);
 		animation-name: colorChange;
@@ -260,15 +250,15 @@ footer p{
 	#profilePhoto{
 		width: 25%;
 	}
-	#content1{
+	#landingContent1{
 		order: 2;
 
 	}
-	#content2{
+	#landingContent2{
 		order: 1;
 
 	}
-	#content3{
+	#landingContent3{
 		order: 3;
 	
 	}
@@ -311,13 +301,19 @@ footer p{
 	footer i{
 		margin-right: 1rem;
 	}
-	#content1{
+	#landingContent1{
 		order: 2;
 	}
-	#content2{
+	#landingContent2{
 		order: 1;
 	}
-	#content3{
+	#landingContent3{
 		order: 3;
 	}
+}
+
+/* -------------------GALERIA------------------ */
+.galleryContent{
+	min-height: 75dvh;
+	width: 28dvw;
 }

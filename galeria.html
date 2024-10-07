@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="images/favicon.jpg">
+    <title>Akademia Wysiłku</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/21cbb0eca0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li class="link"><a href="">O mnie</a></li>
+                <li class="link"><a href="galeria.html" class="active">Galeria</a></li>
+                <li id="logo"><a href="index.html">
+                    <img src="images/logoFirmy.png" alt="logo firmy">
+                </a></li>
+                <li class="link"><a href="">Oferta</a></li>
+                <li class="link"><a href="">Współpraca</a></li>
+                <p id="nazwaFirmy">Akademia Wysiłku</p>
+                <div id="menuButton" onclick="showSidebar()"><i class="fa-solid fa-bars"></i></div>
+                <div id="xButton" onclick="hideSidebar()"><i class="fa-solid fa-x"></i></div>
+            </ul>
+            <ul id="sideBar">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="">O mnie</a></li>
+                <li><a href="galeria.html" class="active">Galeria</a></li>
+                <li><a href="">Oferta</a></li>
+                <li><a href="">Współpraca</a></li>
+                <br>
+                <img src="images/logoFirmy.png" alt="logo firmy" style="height: 80px; margin: auto; margin-top: 20px;">
+                <br>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="mainContainer">
+            <div class="galleryContent">
+
+
+            </div>
+
+            <div class="galleryContent">
+            
+            </div>
+
+            <div class="galleryContent">
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div id="socials">
+            <a href="https://www.youtube.com/@akademiawysikuwojciechczaj4751" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
+            <a href="https://www.instagram.com/akademia_wysilku/" target="_blank"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
+            <a href="https://www.facebook.com/AkademiaWysilkuWojciechCzajkowski/" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
+        </div>
+        
+        <div id="copyrights">
+            <a href="http://8b.com.pl" target="_blank"><p>&copy 8b.com.pl 2024</p></a>
+        </div>
+        
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
