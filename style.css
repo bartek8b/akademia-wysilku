@@ -262,7 +262,7 @@ footer p{
 		order: 3;
 	
 	}
-	#content3 i, #content1 i{
+	#landingContent3 i, #landingContent1 i{
 		width: 50%;
 	}
 }
@@ -313,6 +313,7 @@ footer p{
 }
 
 /* -------------------GALERIA------------------ */
+
 .galleryContent{
 	min-height: 75dvh;
 	width: 28dvw;
