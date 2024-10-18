@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/21cbb0eca0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <header>
@@ -16,8 +18,8 @@
                 <li class="link"><a href="">O mnie</a></li>
                 <li class="link"><a href="galeria.html" class="active">Galeria</a></li>
                 <li id="logo"><a href="index.html">
-                    <img src="images/logoFirmy.png" alt="logo firmy">
-                </a></li>
+                        <img src="images/logoFirmy.png" alt="logo firmy">
+                    </a></li>
                 <li class="link"><a href="">Oferta</a></li>
                 <li class="link"><a href="">Współpraca</a></li>
                 <p id="nazwaFirmy">Akademia Wysiłku</p>
@@ -40,35 +42,110 @@
 
     <main>
         <div id="mainContainer">
-            <div class="galleryContent">
 
-
+            <!-- -----WYŚWIETLANIE GALERII----- -->
+            <div class="albumCover" id="diplomasCover" onclick="openAlbum(diplomasArray, 'diplomasDisplay', 'diplomasPictureDisplay')">
+                <h5>Dyplomy</h5>
+                <br>
             </div>
 
-            <div class="galleryContent">
+            <div class="albumCover" id="gymCover" onclick="openAlbum(gymArray, 'gymDisplay', 'gymPictureDisplay')">
+                <h5>Miejsce</h5>
+                <br>
+            </div>
+
+            <div class="albumCover" id="trainingCover" onclick="openAlbum(trainingArray, 'trainingDisplay', 'trainingPictureDisplay')">
+                <h5>Trening</h5>
+                <br>
+            </div>
+
+            <!-- -----WYŚWIETLANIE ALBUMU diplomasDisplay ----- -->
             
+            <div id="diplomasDisplay" style="min-width: 70%; display: none;"> <!-- argument="albumDisplay" -->
+
+                <div style="display: flex; justify-content: center;"><button class="closeAlbum" onclick="closeAlbum('diplomasDisplay')">&circlearrowleft;</button></div>
+                <br>
+
+                <p class="photoCounter" style="text-align: center; font-size: 0.9rem;"></p> 
+                <br>
+                
+                <div style="display: inline-flex; align-items: top; width: 100%;">
+                    <button class="galleryPrev" onclick="prevPhoto(diplomasArray, 'diplomasPictureDisplay')">&longleftarrow;</button>
+
+                    <img id="diplomasPictureDisplay" src=""> <!-- argument="albumPictureDisplay" -->
+                    
+                    <button class="galleryNext" onclick="nextPhoto(diplomasArray, 'diplomasPictureDisplay')">&LongRightArrow;</button>
+
+                </div>
+                
             </div>
 
-            <div class="galleryContent">
+            <!-- -----WYŚWIETLANIE ALBUMU gymDisplay ----- -->
 
+            <div id="gymDisplay" style="min-width: 70%; display: none;"> <!-- argument="albumDisplay" -->
+
+                <div style="display: flex; justify-content: center;"><button class="closeAlbum" onclick="closeAlbum('gymDisplay')">&circlearrowleft;</button></div>
+                <br>
+
+                <p class="photoCounter" style="text-align: center; font-size: 0.9rem;"></p> 
+                <br>
+                
+                <div style="display: inline-flex; align-items: top; width: 100%;">
+                    <button class="galleryPrev" onclick="prevPhoto(gymArray, 'gymPictureDisplay')">&longleftarrow;</button>
+
+                    <img id="gymPictureDisplay" src=""> <!-- argument="albumPictureDisplay" -->
+                    
+                    <button class="galleryNext" onclick="nextPhoto(gymArray, 'gymPictureDisplay')">&LongRightArrow;</button>
+
+                </div>
+                
             </div>
+
+            <!-- -----WYŚWIETLANIE ALBUMU trainingDisplay ----- -->
+
+            <div id="trainingDisplay" style="min-width: 70%; display: none;"> <!-- argument="albumDisplay" -->
+
+                <div style="display: flex; justify-content: center;"><button class="closeAlbum" onclick="closeAlbum('trainingDisplay')">&circlearrowleft;</button></div>
+                <br>
+
+                <p class="photoCounter" style="text-align: center; font-size: 0.9rem;"></p> 
+                <br>
+                
+                <div style="display: inline-flex; align-items: top; width: 100%;">
+                    <button class="galleryPrev" onclick="prevPhoto(trainingArray, 'trainingPictureDisplay')">&longleftarrow;</button>
+
+                    <img id="trainingPictureDisplay" src=""> <!-- argument="albumPictureDisplay" -->
+                    
+                    <button class="galleryNext" onclick="nextPhoto(trainingArray, 'trainingPictureDisplay')">&LongRightArrow;</button>
+
+                </div>
+                
+            </div>            
 
         </div>
+
+
     </main>
 
     <footer>
         <div id="socials">
-            <a href="https://www.youtube.com/@akademiawysikuwojciechczaj4751" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
-            <a href="https://www.instagram.com/akademia_wysilku/" target="_blank"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
-            <a href="https://www.facebook.com/AkademiaWysilkuWojciechCzajkowski/" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
+            <a href="https://www.youtube.com/@akademiawysikuwojciechczaj4751" target="_blank"><i
+                    class="fa-brands fa-youtube fa-xl"></i></a>
+            <a href="https://www.instagram.com/akademia_wysilku/" target="_blank"><i
+                    class="fa-brands fa-square-instagram fa-xl"></i></a>
+            <a href="https://www.facebook.com/AkademiaWysilkuWojciechCzajkowski/" target="_blank"><i
+                    class="fa-brands fa-facebook fa-xl"></i></a>
         </div>
-        
+
         <div id="copyrights">
-            <a href="http://8b.com.pl" target="_blank"><p>&copy 8b.com.pl 2024</p></a>
+            <a href="http://8b.com.pl" target="_blank">
+                <p>&copy 8b.com.pl 2024</p>
+            </a>
         </div>
-        
+
     </footer>
 
     <script src="index.js"></script>
 </body>
+
 </html>

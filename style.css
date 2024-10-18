@@ -104,8 +104,7 @@ main {
 	padding: 2rem 2rem;
 	min-height: 75dvh;
 	width: 28dvw;
-	align-content: space-around;
-	align-self: center;	
+	align-self: center;
 	overflow: visible;
 	color: black;
 	background: linear-gradient(
@@ -115,7 +114,7 @@ main {
 	);
 	border-radius: 0.7rem;
 	box-shadow: 1px 1px 1px hsl(0, 0%, 60%);
-	display: flow-root;
+	/* display: flow-root; */
 	animation-name: opacityChange;
 	animation-duration: 3s;
 }
@@ -123,6 +122,7 @@ main {
 	margin: 0;
 	font-size: 1rem;
 	font-weight: bold;
+	text-align: center;
 	text-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 }
 #mainContainer i{
@@ -145,6 +145,9 @@ main {
 }
 #mainContainer div > a{
 	color: black;
+}
+#landingContent1, #landingContent2, #landingContent3{
+	align-content: space-around;
 }
 #landingContent3 i{
 	&:hover {
@@ -314,7 +317,44 @@ footer p{
 
 /* -------------------GALERIA------------------ */
 
-.galleryContent{
-	min-height: 75dvh;
-	width: 28dvw;
+.albumCover{
+	display: block;
+	align-content: space-between;
+	cursor: pointer;
+	&:hover{
+		/* border: 1.5px groove hsl(0, 0%, 80%); */
+		filter: brightness(110%);
+	}
 }
+.albumCover img{
+	max-width: 100%;
+	max-height: 50dvh;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 2rem;
+	border-radius: 0.7rem;
+}
+
+#diplomasPictureDisplay, #gymPictureDisplay, #trainingPictureDisplay{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	border-radius: 0.7rem;
+	max-height: 80dvh;
+	max-width: 80%;
+}
+
+.galleryPrev, .galleryNext, .closeAlbum{
+	font-size: 1.1rem;
+	width: 3rem;
+	height: 2rem;
+	border: none;
+	border-radius: 0.7rem;
+	background-color: hsl(0, 0%, 80%);
+	cursor: pointer;
+	&:hover{
+		filter: brightness(110%);
+	}
+}
+
