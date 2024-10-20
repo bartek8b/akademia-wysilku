@@ -104,10 +104,9 @@ displayRandomImage("trainingCover", trainingArray);
 
 let photoCounter = 0;
 let covers = document.querySelectorAll(".albumCover");
+let counters = document.querySelectorAll(".photoCounter");
 
 function openAlbum(arrayName, albumDisplay, albumPictureDisplay) {
-	let counters = document.querySelectorAll(".photoCounter");
-
 	counters.forEach(counter => {
 		counter.innerHTML = photoCounter + 1 + "/" + arrayName.length;
 	});
@@ -135,7 +134,6 @@ function nextPhoto(arrayName, albumPictureDisplay) {
 		photoCounter++;
 	}
 
-	let counters = document.querySelectorAll(".photoCounter");
 	counters.forEach(counter => {
 		counter.innerHTML = photoCounter + 1 + "/" + arrayName.length;
 	});
@@ -150,7 +148,6 @@ function prevPhoto(arrayName, albumPictureDisplay) {
 		photoCounter--;
 	}
 
-	let counters = document.querySelectorAll(".photoCounter");
 	counters.forEach(counter => {
 		counter.innerHTML = photoCounter + 1 + "/" + arrayName.length;
 	});

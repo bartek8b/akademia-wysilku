@@ -18,9 +18,7 @@ body {
 header {
 	position: sticky;
 	top: 0px;
-	background: linear-gradient(to left,
-			  hsl(0, 0%, 40%),
-			  hsl(0, 0%, 60%));
+	background: linear-gradient(to left, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
 	border-radius: 0.7rem;
 	z-index: 1;
 }
@@ -38,7 +36,7 @@ nav li {
 	&:hover {
 		background-color: hsl(0, 0%, 80%);
 		animation-name: colorChange;
-		animation-duration: .5s;
+		animation-duration: 0.5s;
 		border-radius: 0.7rem;
 		text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
 	}
@@ -84,7 +82,7 @@ nav a {
 	padding-top: 0.3rem;
 	padding-bottom: 0.3rem;
 }
-.active{
+.active {
 	background-color: hsl(0, 0%, 70%);
 	text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
 	border-radius: 0.7rem;
@@ -118,14 +116,14 @@ main {
 	animation-name: opacityChange;
 	animation-duration: 3s;
 }
-#mainContainer h5{
+#mainContainer h5 {
 	margin: 0;
 	font-size: 1rem;
 	font-weight: bold;
 	text-align: center;
 	text-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 }
-#mainContainer i{
+#mainContainer i {
 	width: 100%;
 	height: auto;
 	float: left;
@@ -133,23 +131,25 @@ main {
 	font-size: 2rem;
 	padding: 1rem;
 }
-#profilePhoto{
+#profilePhoto {
 	width: 50%;
 	float: left;
 	margin-right: 0.7rem;
 	border-radius: 0.7rem;
 }
-#mainContainer div p{
-	margin: 0;	
+#mainContainer div p {
+	margin: 0;
 	padding-top: 0.5rem;
 }
-#mainContainer div > a{
+#mainContainer div > a {
 	color: black;
 }
-#landingContent1, #landingContent2, #landingContent3{
+.sortContent1,
+.sortContent2,
+.sortContent3 {
 	align-content: space-around;
 }
-#landingContent3 i{
+.sortContent3 i {
 	&:hover {
 		background-color: hsl(0, 0%, 80%);
 		animation-name: colorChange;
@@ -158,7 +158,7 @@ main {
 		text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
 	}
 }
-.italic{
+.italic {
 	font-family: Arial, sans-serif;
 	font-style: italic;
 	font-weight: normal;
@@ -167,14 +167,11 @@ main {
 footer {
 	display: flex;
 	width: 100%;
-	background: linear-gradient(
-		to right,
-		hsl(0, 0%, 40%),
-		hsl(0, 0%, 60%));
+	background: linear-gradient(to right, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
 	border-radius: 0.7rem;
 	z-index: 1;
 }
-footer i{
+footer i {
 	margin-top: 1.3rem;
 	margin-right: 1.5rem;
 	color: hsl(0, 0%, 30%);
@@ -184,7 +181,7 @@ footer i{
 		color: black;
 	}
 }
-footer p{
+footer p {
 	margin-right: 2rem;
 	color: hsl(0, 0%, 40%);
 	float: right;
@@ -193,13 +190,13 @@ footer p{
 #socials {
 	width: 50%;
 }
-#socials:first-child{
+#socials:first-child {
 	margin-left: 2rem;
 }
 #copyrights {
 	width: 50%;
 }
-#sideBar{
+#sideBar {
 	display: none;
 	flex-direction: column;
 	position: fixed;
@@ -207,10 +204,7 @@ footer p{
 	right: 0;
 	height: auto;
 	width: 60dvw;
-	background: linear-gradient(
-		to bottom,
-		hsl(0, 0%, 60%),
-		hsl(0, 0%, 40%));
+	background: linear-gradient(to bottom, hsl(0, 0%, 60%), hsl(0, 0%, 40%));
 	border-radius: 0.7rem;
 	margin-top: 3rem;
 	overflow: auto;
@@ -238,8 +232,12 @@ footer p{
 	}
 }
 @keyframes opacityChange {
-	from {opacity: 0%;}
-	to {opacity: 100%;}
+	from {
+		opacity: 0%;
+	}
+	to {
+		opacity: 100%;
+	}
 }
 @media (768px < width <= 1024px) {
 	#mainContainer {
@@ -250,23 +248,17 @@ footer p{
 		min-height: auto;
 		width: 80dvw;
 	}
-	#profilePhoto{
+	#profilePhoto {
 		width: 25%;
 	}
-	#landingContent1{
+	.sortContent1 {
 		order: 2;
-
 	}
-	#landingContent2{
+	.sortContent2 {
 		order: 1;
-
 	}
-	#landingContent3{
+	.sortContent3 {
 		order: 3;
-	
-	}
-	#landingContent3 i, #landingContent1 i{
-		width: 50%;
 	}
 }
 @media (width <= 768px) {
@@ -301,60 +293,64 @@ footer p{
 		min-height: auto;
 		width: 85dvw;
 	}
-	footer i{
+	footer i {
 		margin-right: 1rem;
 	}
-	#landingContent1{
+	.sortContent1 {
 		order: 2;
 	}
-	#landingContent2{
+	.sortContent2 {
 		order: 1;
 	}
-	#landingContent3{
+	.sortContent3 {
 		order: 3;
 	}
 }
 
 /* -------------------GALERIA------------------ */
 
-.albumCover{
+.albumCover {
 	display: block;
-	align-content: space-between;
+	align-content: start;
 	cursor: pointer;
-	&:hover{
-		/* border: 1.5px groove hsl(0, 0%, 80%); */
+	&:hover {
 		filter: brightness(110%);
 	}
 }
-.albumCover img{
+.albumCover img {
 	max-width: 100%;
 	max-height: 50dvh;
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 2rem;
 	border-radius: 0.7rem;
 }
 
-#diplomasPictureDisplay, #gymPictureDisplay, #trainingPictureDisplay{
+#diplomasPictureDisplay,
+#gymPictureDisplay,
+#trainingPictureDisplay {
 	display: block;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	border-radius: 0.7rem;
 	max-height: 80dvh;
 	max-width: 80%;
 }
 
-.galleryPrev, .galleryNext, .closeAlbum{
+.galleryPrev,
+.galleryNext,
+.closeAlbum {
 	font-size: 1.1rem;
 	width: 3rem;
 	height: 2rem;
 	border: none;
+	margin-right: 0.3rem;
+	margin-left: 0.3rem;
 	border-radius: 0.7rem;
 	background-color: hsl(0, 0%, 80%);
 	cursor: pointer;
-	&:hover{
+	&:hover {
 		filter: brightness(110%);
 	}
 }
-
