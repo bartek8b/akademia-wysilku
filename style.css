@@ -16,8 +16,6 @@ body {
 	background-size: cover;
 }
 header {
-	position: sticky;
-	top: 0px;
 	background: linear-gradient(to left, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
 	border-radius: 0.7rem;
 	z-index: 1;
@@ -268,6 +266,9 @@ footer p {
 	body {
 		background-image: url(images/background_mobile.jpg);
 	}
+	header {
+		position: sticky;
+		top: 0px;}
 	#logo {
 		display: none;
 	}
