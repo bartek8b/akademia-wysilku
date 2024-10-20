@@ -123,14 +123,6 @@ main {
 	text-align: center;
 	text-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 }
-#mainContainer i {
-	width: 100%;
-	height: auto;
-	float: left;
-	text-align: center;
-	font-size: 2rem;
-	padding: 1rem;
-}
 #profilePhoto {
 	width: 50%;
 	float: left;
@@ -148,6 +140,14 @@ main {
 .sortContent2,
 .sortContent3 {
 	align-content: space-around;
+}
+.sortContent1 i, .sortContent3 i {
+	width: 100%;
+	height: auto;
+	float: left;
+	text-align: center;
+	font-size: 2rem;
+	padding: 1rem;
 }
 .sortContent3 i {
 	&:hover {
@@ -259,6 +259,9 @@ footer p {
 	}
 	.sortContent3 {
 		order: 3;
+	}
+	.sortContent1 i, .sortContent3 i {
+		width: 50%;
 	}
 }
 @media (width <= 768px) {
