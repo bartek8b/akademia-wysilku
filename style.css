@@ -126,6 +126,7 @@ main {
 	float: left;
 	margin-right: 0.7rem;
 	border-radius: 0.7rem;
+	filter: drop-shadow(5px 5px 20px hsl(0, 0%, 80%));
 }
 #mainContainer div p {
 	margin: 0;
