@@ -128,7 +128,7 @@ function closeAlbum(albumDisplay) {
 }
 
 function nextPhoto(arrayName, albumPictureDisplay) {
-	if (photoCounter == arrayName.length - 1) {
+	if (photoCounter === arrayName.length - 1) {
 		photoCounter = 0;
 	} else {
 		photoCounter++;
@@ -142,7 +142,7 @@ function nextPhoto(arrayName, albumPictureDisplay) {
 }
 
 function prevPhoto(arrayName, albumPictureDisplay) {
-	if (photoCounter == 0) {
+	if (photoCounter === 0) {
 		photoCounter = arrayName.length - 1;
 	} else {
 		photoCounter--;
