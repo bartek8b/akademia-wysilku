@@ -295,6 +295,8 @@ footer p {
 .offerTable {
 	display: block;
 	justify-self: stretch;
+	-moz-justify-self: stretch;
+	-webkit-justify-self: stretch;
 	overflow-x: auto;
 }
 .offerTable td {
@@ -333,6 +335,8 @@ footer p {
 	}
 	.offerTable {
 		justify-self: center;
+		-moz-justify-self: center;
+		-webkit-justify-self: center;
 	}
 }
 @media (width <= 768px) {
@@ -385,5 +389,7 @@ footer p {
 	}
 	.offerTable {
 		justify-self: center;
+		-moz-justify-self: center;
+		-webkit-justify-self: center;
 	}
 }
