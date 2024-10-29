@@ -293,9 +293,7 @@ footer p {
 }
 .offerTable {
 	display: block;
-	justify-self: stretch;
-	justify-items: stretch;
-	overflow-x: auto;
+	overflow: auto;
 	border-collapse: collapse;
 }
 .offerTable td {
@@ -335,9 +333,8 @@ footer p {
 		width: 50%;
 	}
 	.offerTable {
-		justify-self: center;
-		-webkit-justify-self: center;
-		-moz-justify-self: center;
+		margin: auto;
+		max-width: 60%;
 	}
 }
 @media (width <= 768px) {
@@ -387,5 +384,9 @@ footer p {
 	}
 	.sortContent3 {
 		order: 3;
+	}
+	.offerTable {
+		margin: auto;
+		max-width: 70%;
 	}
 }
