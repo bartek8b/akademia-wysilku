@@ -368,6 +368,8 @@ footer p {
 .offerTable {
 	display: block;
 	justify-items: stretch;
+	-webkit-justify-items: stretch;
+	-moz-justify-items: stretch;
 	overflow-x: auto;
 }
 .offerTable td {
