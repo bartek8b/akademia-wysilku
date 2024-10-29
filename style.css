@@ -295,8 +295,11 @@ footer p {
 .offerTable {
 	display: block;
 	justify-self: stretch;
-	-moz-justify-self: stretch;
-	-webkit-justify-self: stretch;
+	/* -moz-justify-self: stretch;
+	-webkit-justify-self: stretch; */
+	justify-items: stretch;
+	/* -moz-justify-items: stretch;
+	-webkit-justify-items: stretch; */
 	overflow-x: auto;
 }
 .offerTable td {
@@ -333,11 +336,11 @@ footer p {
 	.iconHome {
 		width: 50%;
 	}
-	.offerTable {
+	/* .offerTable {
 		justify-self: center;
 		-moz-justify-self: center;
 		-webkit-justify-self: center;
-	}
+	} */
 }
 @media (width <= 768px) {
 	body {
@@ -387,9 +390,9 @@ footer p {
 	.sortContent3 {
 		order: 3;
 	}
-	.offerTable {
+	/* .offerTable {
 		justify-self: center;
 		-moz-justify-self: center;
 		-webkit-justify-self: center;
-	}
+	} */
 }
