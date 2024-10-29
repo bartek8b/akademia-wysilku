@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="images/favicon.jpg">
+    <title>Akademia Wysiłku</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/21cbb0eca0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li class="link"><a href="">O mnie</a></li>
+                <li class="link"><a href="galeria.html">Galeria</a></li>
+                <li id="logo"><a href="index.html">
+                        <img src="images/logoFirmy.png" alt="logo firmy">
+                    </a></li>
+                <li class="link"><a href="oferta.html" class="active">Oferta</a></li>
+                <li class="link"><a href="">Współpraca</a></li>
+                <p id="nazwaFirmy">Akademia Wysiłku</p>
+                <div id="menuButton" onclick="showSidebar()"><i class="fa-solid fa-bars"></i></div>
+                <div id="xButton" onclick="hideSidebar()"><i class="fa-solid fa-x"></i></div>
+            </ul>
+            <ul id="sideBar">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="">O mnie</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="oferta.html" class="active">Oferta</a></li>
+                <li><a href="">Współpraca</a></li>
+                <br>
+                <img src="images/logoFirmy.png" alt="logo firmy" style="height: 80px; margin: auto; margin-top: 20px;">
+                <br>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="mainContainer">
+            <div>
+                <i class="fa-solid fa-house-user iconOffer"></i>
+                <br><br>
+                <h5 style="text-align: center;">Treningi indywidualne</h5>
+                <br>
+                <table border="1" class="offerTable">
+                    <tr>
+                        <td class="italic firstRow">Usługa</td>
+                        <td class="italic firstRow">Cena za 1h</td>
+                        <td class="italic firstRow">Cena za 1,5h</td>
+                        <td class="italic firstRow">Ważność</td>
+                    </tr>
+                    <tr>
+                        <td class="italic">Wejście jednorazowe</td>
+                        <td>210</td>
+                        <td>270</td>
+                        <td>nie dotyczy</td>
+                    </tr>
+                    <tr>
+                        <td class="italic">Karnet 4 wizyt</td>
+                        <td>760 (4x190)</td>
+                        <td>960 (4x240)</td>
+                        <td>2 miesiące</td>
+                    </tr>
+                    <tr>
+                        <td class="italic">Karnet 8 wizyt</td>
+                        <td>1360 (8x170)</td>
+                        <td>1680 (8x210)</td>
+                        <td>3 miesiące</td>
+                    </tr>
+                    <tr>
+                        <td class="italic">Karnet 12 wizyt</td>
+                        <td>1800 (12x150)</td>
+                        <td>2160 (12x180)</td>
+                        <td>4 miesiące</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-people-pulling iconOffer"></i>
+                <br><br>
+                <h5>Treningi w parach</h5>
+                <br>
+                <table border="1" class="offerTable">
+                    <tr>
+                        <td class="italic firstRow">Usługa</td>
+                        <td class="italic firstRow">Cena za 1h</td>
+                        <td class="italic firstRow">Cena za 1,5h</td>
+                        <td class="italic firstRow">Ważność</td>
+                    </tr>
+                    <tr>
+                        <td class="italic">Wejście jednorazowe</td>
+                        <td>250</td>
+                        <td>300</td>
+                        <td>nie dotyczy</td>
+                    </tr>
+                    <tr>
+                        <td class="italic">Karnet 4 wizyt</td>
+                        <td>920 (4x230)</td>
+                        <td>1120 (4x280)</td>
+                        <td>2 miesiące</td>
+                    </tr>
+                    <tr>
+                        <td class="italic">Karnet 8 wizyt</td>
+                        <td>1680 (8x210)</td>
+                        <td>2080 (8x260)</td>
+                        <td>3 miesiące</td>
+                    </tr>
+                    <tr>
+                        <td class="italic">Karnet 12 wizyt</td>
+                        <td>2280 (12x190)</td>
+                        <td>2880 (12x240)</td>
+                        <td>4 miesiące</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <i class="fa-solid fa-list-check iconOffer"></i>
+                <br><br>
+                <h5 style="text-align: center;">Konsultacja fizjoterapeutyczna</h5>
+                <br>
+                <table border="1" class="offerTable">
+                    <tr>
+                        <td class="italic firstRow">Usługa</td>
+                        <td class="italic firstRow">Cena</td>
+                        <td class="italic firstRow">Czas</td>
+                    </tr>
+                    <tr>
+                        <td class="italic">Jednorazowa konsultacja fizjoterapeutyczna</td>
+                        <td>270</td>
+                        <td>do 1,5h</td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <br>
+                <p class="italic" style="font-size: 0.8rem;">* O rezygnacji z wizyty prosimy poinformować (telefonicznie, SMSem lub za pośrednictwem WhatsApp) co najmniej na 24h przed terminem spotkania, w przeciwnym wypadku Pacjent będzie zobowiązany do pokrycia 100% kosztów wizyty.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="socials">
+            <a href="https://www.youtube.com/@akademiawysikuwojciechczaj4751" target="_blank"><i
+                    class="fa-brands fa-youtube fa-xl"></i></a>
+            <a href="https://www.instagram.com/akademia_wysilku/" target="_blank"><i
+                    class="fa-brands fa-square-instagram fa-xl"></i></a>
+            <a href="https://www.facebook.com/AkademiaWysilkuWojciechCzajkowski/" target="_blank"><i
+                    class="fa-brands fa-facebook fa-xl"></i></a>
+        </div>
+
+        <div id="copyrights">
+            <a href="http://8b.com.pl" target="_blank">
+                <p>&copy 8b.com.pl 2024</p>
+            </a>
+        </div>
+
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

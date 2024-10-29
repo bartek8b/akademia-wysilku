@@ -101,7 +101,6 @@ main {
 	min-height: 75dvh;
 	width: 28dvw;
 	align-self: center;
-	overflow: visible;
 	color: black;
 	background: linear-gradient(
 		to top,
@@ -140,7 +139,7 @@ main {
 .sortContent3 {
 	align-content: space-around;
 }
-.sortContent1 i, .sortContent3 i {
+.iconHome {
 	width: 100%;
 	height: auto;
 	float: left;
@@ -148,7 +147,7 @@ main {
 	font-size: 2rem;
 	padding: 1rem;
 }
-.sortContent3 i {
+.iconContact {
 	&:hover {
 		background-color: hsl(0, 0%, 80%);
 		animation-name: colorChange;
@@ -259,7 +258,7 @@ footer p {
 	.sortContent3 {
 		order: 3;
 	}
-	.sortContent1 i, .sortContent3 i {
+	.iconHome {
 		width: 50%;
 	}
 }
@@ -269,7 +268,8 @@ footer p {
 	}
 	header {
 		position: sticky;
-		top: 0px;}
+		top: 0px;
+	}
 	#logo {
 		display: none;
 	}
@@ -331,7 +331,6 @@ footer p {
 	margin-top: 2rem;
 	border-radius: 0.7rem;
 }
-
 #diplomasPictureDisplay,
 #gymPictureDisplay,
 #trainingPictureDisplay {
@@ -342,7 +341,6 @@ footer p {
 	max-height: 80dvh;
 	max-width: 80%;
 }
-
 .galleryPrev,
 .galleryNext,
 .closeAlbum {
@@ -359,4 +357,23 @@ footer p {
 	&:hover {
 		filter: brightness(110%);
 	}
+}
+
+/* -------------------OFERTA------------------ */
+.iconOffer {
+	font-size: 2rem;
+	width: 100%;
+	text-align: center;
+}
+.offerTable {
+	display: block;
+	justify-items: stretch;
+	overflow-x: auto;
+}
+.offerTable td {
+	font-weight: normal;
+	padding: 6px;
+}
+.firstRow{
+	text-align: center;
 }
