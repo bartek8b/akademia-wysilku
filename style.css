@@ -1,6 +1,7 @@
-/* -------------------OGÓLNE I LANDING PAGE------------------ */
+/* -------------------OGÓLNE I HOME PAGE------------------ */
 * {
 	box-sizing: border-box;
+	color:  hsl(0, 0%, 10%);
 }
 *::selection {
 	color: black;
@@ -109,7 +110,6 @@ main {
 	);
 	border-radius: 0.7rem;
 	box-shadow: 1px 1px 1px hsl(0, 0%, 60%);
-	/* display: flow-root; */
 	animation-name: opacityChange;
 	animation-duration: 3s;
 }
@@ -276,8 +276,7 @@ footer p {
 	height: 2rem;
 	border: none;
 	padding: auto;
-	margin-right: 0.3rem;
-	margin-left: 0.3rem;
+	margin: 0 0.3rem auto 0.3rem;
 	border-radius: 0.7rem;
 	background-color: hsl(0, 0%, 80%);
 	cursor: pointer;
@@ -295,19 +294,19 @@ footer p {
 .offerTable {
 	display: block;
 	justify-self: stretch;
-	-moz-justify-self: stretch;
-	-webkit-justify-self: stretch;
 	justify-items: stretch;
-	-moz-justify-items: stretch;
-	-webkit-justify-items: stretch;
 	overflow-x: auto;
+	border-collapse: collapse;
+	padding: 1rem 0 1rem 0;
 }
 .offerTable td {
 	font-weight: normal;
 	padding: 6px;
+	border: 2px solid hsl(0, 0%, 10%);
 }
 .firstRow{
 	text-align: center;
+	background-color: hsl(0, 0%, 60%);
 }
 
 
@@ -336,11 +335,9 @@ footer p {
 	.iconHome {
 		width: 50%;
 	}
-	/* .offerTable {
+	.offerTable {
 		justify-self: center;
-		-moz-justify-self: center;
-		-webkit-justify-self: center;
-	} */
+	}
 }
 @media (width <= 768px) {
 	body {
@@ -390,9 +387,4 @@ footer p {
 	.sortContent3 {
 		order: 3;
 	}
-	/* .offerTable {
-		justify-self: center;
-		-moz-justify-self: center;
-		-webkit-justify-self: center;
-	} */
 }
