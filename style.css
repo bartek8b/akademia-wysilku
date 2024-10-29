@@ -295,11 +295,11 @@ footer p {
 .offerTable {
 	display: block;
 	justify-self: stretch;
-	/* -moz-justify-self: stretch;
-	-webkit-justify-self: stretch; */
+	-moz-justify-self: stretch;
+	-webkit-justify-self: stretch;
 	justify-items: stretch;
-	/* -moz-justify-items: stretch;
-	-webkit-justify-items: stretch; */
+	-moz-justify-items: stretch;
+	-webkit-justify-items: stretch;
 	overflow-x: auto;
 }
 .offerTable td {
