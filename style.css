@@ -293,6 +293,7 @@ footer p {
 }
 .offerTable {
 	display: block;
+	margin: auto;
 	overflow: auto;
 	border-collapse: collapse;
 }
@@ -333,8 +334,7 @@ footer p {
 		width: 50%;
 	}
 	.offerTable {
-		margin: auto;
-		max-width: 60%;
+		width: fit-content;
 	}
 }
 @media (width <= 768px) {
@@ -386,7 +386,6 @@ footer p {
 		order: 3;
 	}
 	.offerTable {
-		margin: auto;
-		max-width: 70%;
+		width: fit-content;
 	}
 }
