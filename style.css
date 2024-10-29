@@ -297,7 +297,6 @@ footer p {
 	justify-items: stretch;
 	overflow-x: auto;
 	border-collapse: collapse;
-	padding: 1rem 0 1rem 0;
 }
 .offerTable td {
 	font-weight: normal;
@@ -337,6 +336,8 @@ footer p {
 	}
 	.offerTable {
 		justify-self: center;
+		-webkit-justify-self: center;
+		-moz-justify-self: center;
 	}
 }
 @media (width <= 768px) {
