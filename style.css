@@ -237,80 +237,7 @@ footer p {
 		opacity: 100%;
 	}
 }
-@media (768px < width <= 1024px) {
-	#mainContainer {
-		flex-direction: column;
-		align-items: center;
-	}
-	#mainContainer > div {
-		min-height: auto;
-		width: 80dvw;
-	}
-	#profilePhoto {
-		width: 25%;
-	}
-	.sortContent1 {
-		order: 2;
-	}
-	.sortContent2 {
-		order: 1;
-	}
-	.sortContent3 {
-		order: 3;
-	}
-	.iconHome {
-		width: 50%;
-	}
-}
-@media (width <= 768px) {
-	body {
-		background-image: url(images/background_mobile.jpg);
-	}
-	header {
-		position: sticky;
-		top: 0px;
-	}
-	#logo {
-		display: none;
-	}
-	.link {
-		display: none;
-	}
-	nav li {
-		font-size: medium;
-		flex-direction: row-reverse;
-	}
-	nav ul {
-		height: 3rem;
-		flex-direction: row-reverse;
-	}
-	#nazwaFirmy {
-		display: flex;
-	}
-	#menuButton {
-		display: flex;
-	}
-	#mainContainer {
-		flex-direction: column;
-		align-items: center;
-	}
-	#mainContainer > div {
-		min-height: auto;
-		width: 85dvw;
-	}
-	footer i {
-		margin-right: 1rem;
-	}
-	.sortContent1 {
-		order: 2;
-	}
-	.sortContent2 {
-		order: 1;
-	}
-	.sortContent3 {
-		order: 3;
-	}
-}
+
 
 /* -------------------GALERIA------------------ */
 
@@ -366,11 +293,8 @@ footer p {
 	text-align: center;
 }
 .offerTable {
-	display: inline-block;
-	min-width: 100%;
-	justify-items: stretch;
-	-webkit-justify-items: stretch;
-	-moz-justify-items: stretch;
+	display: block;
+	justify-self: stretch;
 	overflow-x: auto;
 }
 .offerTable td {
@@ -379,4 +303,87 @@ footer p {
 }
 .firstRow{
 	text-align: center;
+}
+
+
+/* -------------------MEDIA QUERIES------------------ */
+@media (768px < width <= 1024px) {
+	#mainContainer {
+		flex-direction: column;
+		align-items: center;
+	}
+	#mainContainer > div {
+		min-height: auto;
+		width: 80dvw;
+	}
+	#profilePhoto {
+		width: 25%;
+	}
+	.sortContent1 {
+		order: 2;
+	}
+	.sortContent2 {
+		order: 1;
+	}
+	.sortContent3 {
+		order: 3;
+	}
+	.iconHome {
+		width: 50%;
+	}
+	.offerTable {
+		justify-self: center;
+	}
+}
+@media (width <= 768px) {
+	body {
+		background-image: url(images/background_mobile.jpg);
+	}
+	header {
+		position: sticky;
+		top: 0px;
+	}
+	#logo {
+		display: none;
+	}
+	.link {
+		display: none;
+	}
+	nav li {
+		font-size: medium;
+		flex-direction: row-reverse;
+	}
+	nav ul {
+		height: 3rem;
+		flex-direction: row-reverse;
+	}
+	#nazwaFirmy {
+		display: flex;
+	}
+	#menuButton {
+		display: flex;
+	}
+	#mainContainer {
+		flex-direction: column;
+		align-items: center;
+	}
+	#mainContainer > div {
+		min-height: auto;
+		width: 85dvw;
+	}
+	footer i {
+		margin-right: 1rem;
+	}
+	.sortContent1 {
+		order: 2;
+	}
+	.sortContent2 {
+		order: 1;
+	}
+	.sortContent3 {
+		order: 3;
+	}
+	.offerTable {
+		justify-self: center;
+	}
 }
