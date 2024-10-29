@@ -366,7 +366,8 @@ footer p {
 	text-align: center;
 }
 .offerTable {
-	display: block;
+	display: inline-block;
+	min-width: 100%;
 	justify-items: stretch;
 	-webkit-justify-items: stretch;
 	-moz-justify-items: stretch;
