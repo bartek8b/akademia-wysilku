@@ -111,7 +111,7 @@ main {
 	border-radius: 0.7rem;
 	box-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 	animation-name: opacityChange;
-	animation-duration: 3s;
+	animation-duration: 2s;
 }
 #mainContainer h5 {
 	margin: 0;
@@ -385,4 +385,9 @@ footer p {
 	.sortContent3 {
 		order: 3;
 	}
+}
+
+#unList{
+	display: flex;
+	justify-content: center;
 }

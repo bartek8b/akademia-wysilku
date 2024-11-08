@@ -41,5 +41,3 @@ function updateWidth() {
 }
 
 window.addEventListener("resize", updateWidth);
-
-
