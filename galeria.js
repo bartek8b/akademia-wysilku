@@ -32,6 +32,10 @@ const gymArray = [
 	"images/gallery/gym/1.jpg",
 	"images/gallery/gym/2.jpg",
 	"images/gallery/gym/3.jpg",
+	"images/gallery/gym/4.jpg",
+	"images/gallery/gym/5.jpg",
+	"images/gallery/gym/6.jpg",
+	"images/gallery/gym/7.jpg",
 ];
 
 const trainingArray = [
@@ -39,6 +43,14 @@ const trainingArray = [
 	"images/gallery/training/2.jpg",
 	"images/gallery/training/3.jpg",
 	"images/gallery/training/4.jpg",
+	"images/gallery/training/5.jpg",
+	"images/gallery/training/6.jpg",
+	"images/gallery/training/7.jpg",
+	"images/gallery/training/8.jpg",
+	"images/gallery/training/9.jpg",
+	"images/gallery/training/10.jpg",
+	"images/gallery/training/11.jpg",
+	"images/gallery/training/12.jpg"
 ];
 
 function getRandomImage(arrayName) {

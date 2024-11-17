@@ -386,8 +386,3 @@ footer p {
 		order: 3;
 	}
 }
-
-#unList{
-	display: flex;
-	justify-content: center;
-}
