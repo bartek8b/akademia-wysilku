@@ -50,7 +50,8 @@ const trainingArray = [
 	"images/gallery/training/9.jpg",
 	"images/gallery/training/10.jpg",
 	"images/gallery/training/11.jpg",
-	"images/gallery/training/12.jpg"
+	"images/gallery/training/12.jpg",
+	"images/gallery/training/13.jpg"
 ];
 
 function getRandomImage(arrayName) {
