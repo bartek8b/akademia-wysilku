@@ -112,6 +112,7 @@ main {
 	box-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 	animation-name: opacityChange;
 	animation-duration: 2s;
+	overflow: auto;
 }
 #mainContainer h5 {
 	margin: 0;
@@ -161,6 +162,7 @@ main {
 	font-style: italic;
 	font-weight: normal;
 	font-size: 0.9rem;
+	text-wrap: pretty;
 }
 footer {
 	display: flex;
