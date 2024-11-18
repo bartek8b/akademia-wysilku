@@ -10,7 +10,7 @@
 }
 body {
 	margin: 0;
-	font-family: "Roboto", sans-serif;
+	font-family: La, sans-serif;
 	background-image: url(images/background_desktop.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -117,7 +117,7 @@ main {
 }
 #mainContainer h5 {
 	margin: 0;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	font-weight: bold;
 	text-align: center;
 	text-shadow: 1px 1px 1px hsl(0, 0%, 60%);
@@ -159,13 +159,14 @@ main {
 	}
 }
 .italic {
+	font-family: Arial, sans-serif;
 	font-size: 0.9rem;
 	font-style: italic;
 	font-weight: normal;
 	font-size: 0.9rem;
 }
 .caption {
-	font-family: "Roboto", sans-serif;
+	font-family: Arial, sans-serif;
 	font-size: 1rem;
 	font-weight: normal;
 }
