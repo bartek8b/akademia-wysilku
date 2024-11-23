@@ -423,6 +423,6 @@ footer p {
 		order: 3;
 	}
 	#oMniePhoto {
-		width: 100%;
+		min-width: 100%;
 	}
 }
