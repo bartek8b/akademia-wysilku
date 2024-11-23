@@ -373,6 +373,9 @@ footer p {
 	.offerTable {
 		width: fit-content;
 	}
+	#oMniePhoto {
+		max-width: 80%;
+	}
 }
 @media (width <= 768px) {
 	body {
