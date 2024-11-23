@@ -335,7 +335,7 @@ footer p {
 
 #oMniePhoto {
 	max-width: 70%;
-	max-height: 50dvh;
+	height: auto;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -372,6 +372,7 @@ footer p {
 	}
 	#oMniePhoto {
 		min-width: 80%;
+		height: auto;
 	}
 }
 @media (width <= 768px) {
@@ -424,5 +425,6 @@ footer p {
 	}
 	#oMniePhoto {
 		min-width: 90%;
+		height: auto;
 	}
 }
