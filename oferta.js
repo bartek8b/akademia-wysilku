@@ -8,7 +8,7 @@ containers.forEach(container => {
 		child1.style.display = "block";
         child2.style.display = "block";
         child3.style.display = "none";
-        child4.style.fontSize = "2rem";
+        child4.style.fontSize = "1.5rem";
 	});
 	container.addEventListener("mouseout", () => {
 		const child1 = container.querySelector(".offerTable");

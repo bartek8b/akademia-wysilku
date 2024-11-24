@@ -156,14 +156,14 @@ main {
 	padding: 1rem;
 }
 .iconContact {
-	transform: scale(100%);
+	border-radius: 0.7rem;
+	transform: scale(100%) 0.5s;
 	transition-duration: 0.5s;
 	&:hover {
 		background-color: hsl(0, 0%, 80%);
-		animation: colorChange 0.7s;
-		border-radius: 0.7rem;
+		animation: colorChange 0.5s;
 		text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
-		transform: scale(105%);
+		transform: scale(107%);
 		transition-duration: 0.5s;
 	}
 }
@@ -257,7 +257,7 @@ footer p {
 }
 @keyframes scaleChange {
 	from {
-		scale: 50%;
+		scale: 90%;
 	}
 	to {
 		scale: 100%;
