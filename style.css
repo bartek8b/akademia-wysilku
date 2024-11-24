@@ -22,6 +22,7 @@ body {
 img {
 	box-shadow: 1.5px 1.5px 1.5px hsl(0, 0%, 30%);
 	border-radius: 0.4rem;
+	animation: opacityChange 2s;
 }
 header {
 	background: linear-gradient(to left, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
@@ -41,8 +42,7 @@ nav li {
 	text-shadow: -1px -1px 1px hsl(0, 0%, 40%);
 	&:hover {
 		background-color: hsl(0, 0%, 80%);
-		animation-name: colorChange;
-		animation-duration: 0.5s;
+		animation: colorChange 0.5s;
 		border-radius: 0.7rem;
 		text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
 	}
@@ -76,8 +76,7 @@ nav a {
 	text-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 	&:hover {
 		background-color: hsl(0, 0%, 80%);
-		animation-name: colorChange;
-		animation-duration: 0.5s;
+		animation: colorChange 0.5s;
 		border-radius: 0.7rem;
 		text-shadow: -1.5px -1.5px 2px hsl(0, 0%, 40%);
 	}
@@ -88,6 +87,7 @@ nav a {
 	padding-top: 0.3rem;
 	padding-bottom: 0.3rem;
 	box-shadow: none;
+	animation: none;
 }
 .active {
 	background-color: hsl(0, 0%, 70%);
@@ -118,8 +118,7 @@ main {
 	);
 	border-radius: 0.7rem;
 	box-shadow: 1.5px 1.5px 1.5px hsl(0, 0%, 50%);
-	animation-name: opacityChange;
-	animation-duration: 2s;
+	animation: opacityChange 1s;
 	overflow: auto;
 }
 #mainContainer h5 {
@@ -157,10 +156,11 @@ main {
 	padding: 1rem;
 }
 .iconContact {
+	transform: scale(100%);
+	transition-duration: 0.5s;
 	&:hover {
 		background-color: hsl(0, 0%, 80%);
-		animation-name: colorChange;
-		animation-duration: 0.7s;
+		animation: colorChange 0.7s;
 		border-radius: 0.7rem;
 		text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
 		transform: scale(105%);
@@ -262,6 +262,8 @@ footer p {
 	display: block;
 	align-content: start;
 	cursor: pointer;
+	transform: scale(100%);
+	transition-duration: 0.5s;
 	&:hover {
 		filter: brightness(120%);
 		transform: scale(105%);
@@ -297,6 +299,8 @@ footer p {
 	border-radius: 0.4rem;
 	background-color: hsl(0, 0%, 80%);
 	cursor: pointer;
+	transform: scale(100%);
+	transition-duration: 0.5s;
 	&:hover {
 		filter: brightness(120%);
 		transform: scale(110%);
@@ -305,11 +309,16 @@ footer p {
 }
 
 /* -------------------OFERTA------------------ */
-.offerDiv:hover {
-	filter: brightness(120%);
-	transform: scale(105%);
+.offerDiv {
+	transform: scale(100%);
 	transition-duration: 0.5s;
+	&:hover {
+		filter: brightness(120%);
+		transform: scale(105%);
+		transition-duration: 0.5s;
+	}
 }
+
 .iconOffer {
 	font-size: 2rem;
 	width: 100%;
