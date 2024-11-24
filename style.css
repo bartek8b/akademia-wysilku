@@ -331,13 +331,14 @@ footer p {
 	font-size: 3rem;
 	width: 100%;
 	text-align: center;
+	transition: linear 0.5s;
 }
 .offerTable {
 	display: none;
 	margin: auto;
 	overflow: auto;
 	border-collapse: collapse;
-	animation: scaleChange 1s;
+	animation: scaleChange 0.5s;
 }
 .offerTable td {
 	font-weight: normal;
@@ -350,7 +351,7 @@ footer p {
 }
 .offerClausure {
 	display: none;
-	animation: scaleChange 1s;
+	animation: scaleChange 0.5s;
 }
 .offerDetails{
 	text-align: center;
