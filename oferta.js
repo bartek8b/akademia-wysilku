@@ -18,6 +18,6 @@ containers.forEach(container => {
 		child1.style.display = "none";
         child2.style.display = "none";
         child3.style.display = "block";
-        child4.style.fontSize = "4rem";
+        child4.style.fontSize = "3rem";
 	});
 });
