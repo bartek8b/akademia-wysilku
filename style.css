@@ -328,7 +328,7 @@ footer p {
 }
 
 .iconOffer {
-	font-size: 2rem;
+	font-size: 4rem;
 	width: 100%;
 	text-align: center;
 }
@@ -348,12 +348,12 @@ footer p {
 	text-align: center;
 	background-color: hsl(0, 0%, 60%);
 }
-.offerCaption {
-	display: block;
-}
 .offerClausure {
 	display: none;
 	animation: scaleChange 1s;
+}
+.offerDetails{
+	text-align: center;
 }
 
 /* -------------------O MNIE------------------ */
