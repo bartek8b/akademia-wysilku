@@ -255,6 +255,14 @@ footer p {
 		opacity: 100%;
 	}
 }
+@keyframes scaleChange {
+	from {
+		scale: 50%;
+	}
+	to {
+		scale: 100%;
+	}
+}
 
 /* -------------------GALERIA------------------ */
 
@@ -265,7 +273,6 @@ footer p {
 	transform: scale(100%);
 	transition-duration: 0.5s;
 	&:hover {
-		filter: brightness(120%);
 		transform: scale(105%);
 		transition-duration: 0.5s;
 	}
@@ -310,10 +317,11 @@ footer p {
 
 /* -------------------OFERTA------------------ */
 .offerDiv {
+	align-content: center;
+	cursor: pointer;
 	transform: scale(100%);
 	transition-duration: 0.5s;
 	&:hover {
-		filter: brightness(120%);
 		transform: scale(105%);
 		transition-duration: 0.5s;
 	}
@@ -325,10 +333,11 @@ footer p {
 	text-align: center;
 }
 .offerTable {
-	display: block;
+	display: none;
 	margin: auto;
 	overflow: auto;
 	border-collapse: collapse;
+	animation: scaleChange 1s;
 }
 .offerTable td {
 	font-weight: normal;
@@ -338,6 +347,13 @@ footer p {
 .firstRow {
 	text-align: center;
 	background-color: hsl(0, 0%, 60%);
+}
+.offerCaption {
+	display: block;
+}
+.offerClausure {
+	display: none;
+	animation: scaleChange 1s;
 }
 
 /* -------------------O MNIE------------------ */
