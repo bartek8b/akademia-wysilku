@@ -334,7 +334,7 @@ footer p {
 /* -------------------O MNIE------------------ */
 
 #oMniePhoto {
-	max-width: 70%;
+	max-width: 50%;
 	height: auto;
 	display: block;
 	margin-left: auto;
@@ -371,7 +371,7 @@ footer p {
 		width: fit-content;
 	}
 	#oMniePhoto {
-		min-width: 80%;
+		min-width: 70%;
 		height: auto;
 	}
 }
