@@ -10,10 +10,8 @@
 	color: hsl(0, 0%, 90%);
 	background-color: hsl(0, 0%, 60%);
 }
-*:focus,
-*:active {
-	outline: 2px solid hsl(0, 0%, 60%);
-	background-color: transparent;
+* {
+	-webkit-tap-highlight-color: transparent;
 }
 body {
 	margin: 0;
