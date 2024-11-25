@@ -7,8 +7,13 @@
 }
 
 *::selection {
-	color: black;
-	background-color: hsl(0, 0%, 40%);
+	color: hsl(0, 0%, 90%);
+	background-color: hsl(0, 0%, 60%);
+}
+*:focus,
+*:active {
+	outline: 2px solid hsl(0, 0%, 60%);
+	background-color: transparent;
 }
 body {
 	margin: 0;
@@ -353,7 +358,7 @@ footer p {
 	display: none;
 	animation: scaleChange 0.5s;
 }
-.offerDetails{
+.offerDetails {
 	text-align: center;
 }
 
