@@ -5,6 +5,7 @@
 	color: hsl(0, 0%, 10%);
 	text-wrap: pretty;
 	-webkit-tap-highlight-color: transparent;
+	transition: linear 0.5s;
 }
 
 *::selection {
@@ -332,7 +333,6 @@ footer p {
 	font-size: 3rem;
 	width: 100%;
 	text-align: center;
-	transition: linear 0.5s;
 }
 .offerTable {
 	display: none;
