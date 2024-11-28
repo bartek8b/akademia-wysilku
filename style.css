@@ -17,6 +17,9 @@ body {
 	background: url(images/background_desktop.jpg) no-repeat center center fixed;
 	background-size: cover;
 	transition: linear 0.5s;
+	height: 100dvh;
+	display: flex;
+	flex-direction: column;
 }
 img {
 	box-shadow: 1.5px 1.5px 1.5px hsl(0, 0%, 30%);
@@ -96,6 +99,7 @@ nav a {
 main {
 	color: hsl(0, 0%, 80%);
 	text-align: left;
+	flex: 1
 }
 #mainContainer {
 	display: flex;
