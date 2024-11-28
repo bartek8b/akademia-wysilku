@@ -5,18 +5,19 @@
 	color: hsl(0, 0%, 10%);
 	text-wrap: pretty;
 	-webkit-tap-highlight-color: transparent;
-	transition: linear 0.5s;
 }
 
 *::selection {
 	color: hsl(0, 0%, 90%);
 	background-color: hsl(0, 0%, 60%);
+	transition: linear 0.5s;
 }
 body {
 	margin: 0;
 	font-family: "Lato", "Open Sans", Helvetica, sans-serif;
 	background: url(images/background_desktop.jpg) no-repeat center center fixed;
 	background-size: cover;
+	transition: background-position 0.1s linear;
 }
 img {
 	box-shadow: 1.5px 1.5px 1.5px hsl(0, 0%, 30%);
