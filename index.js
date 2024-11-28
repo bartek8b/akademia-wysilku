@@ -40,4 +40,9 @@ function updateWidth() {
 	}
 }
 
+function adjustHeight() {
+	document.body.style.height = `${window.innerHeight}px`;
+}
+
 window.addEventListener("resize", updateWidth);
+window.addEventListener("scroll", adjustHeight);
