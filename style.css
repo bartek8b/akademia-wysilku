@@ -20,7 +20,7 @@ body {
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
-	transition: background-position 0.5s linear;
+	transition: background-position 0.1s linear;
 }
 img {
 	box-shadow: 1.5px 1.5px 1.5px hsl(0, 0%, 30%);
