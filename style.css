@@ -10,14 +10,15 @@
 *::selection {
 	color: hsl(0, 0%, 90%);
 	background-color: hsl(0, 0%, 60%);
-	transition: linear 0.5s;
 }
 body {
 	margin: 0;
+	min-height: 100dvh;
+	width: auto;
 	font-family: "Lato", "Open Sans", Helvetica, sans-serif;
 	background: url(images/background_desktop.jpg) no-repeat center center fixed;
 	background-size: cover;
-	transition: background-position 0.1s linear;
+	transition: linear 0.5s;
 }
 img {
 	box-shadow: 1.5px 1.5px 1.5px hsl(0, 0%, 30%);
@@ -120,6 +121,7 @@ main {
 	box-shadow: 1.5px 1.5px 1.5px hsl(0, 0%, 50%);
 	animation: opacityChange 1s;
 	overflow: auto;
+	transition: linear 0.5s;
 }
 #mainContainer h5 {
 	margin: 0;
@@ -331,6 +333,7 @@ footer p {
 	font-size: 3rem;
 	width: 100%;
 	text-align: center;
+	transition: linear 0.5s;
 }
 .offerTable {
 	display: none;
