@@ -97,13 +97,13 @@ main {
 	color: hsl(0, 0%, 80%);
 	text-align: left;
 }
-#mainContainer {
+.mainContainer {
 	display: flex;
 	padding: 1.5rem;
 	flex-direction: row;
 	justify-content: space-evenly;
 }
-#mainContainer > div {
+.mainContainer > div {
 	margin: 1.2rem;
 	padding: 2rem 2rem;
 	min-height: 75dvh;
@@ -121,7 +121,7 @@ main {
 	overflow: auto;
 	transition: linear 0.5s;
 }
-#mainContainer h5 {
+.mainContainer h5 {
 	margin: 0;
 	font-size: 1.1rem;
 	font-weight: bold;
@@ -135,11 +135,11 @@ main {
 	filter: drop-shadow(5px 5px 20px hsl(0, 0%, 80%));
 	box-shadow: none;
 }
-#mainContainer div p {
+.mainContainer div p {
 	margin: 0;
 	padding-top: 0.5rem;
 }
-#mainContainer div > a {
+.mainContainer div > a {
 	color: black;
 }
 .sortContent1,
@@ -368,13 +368,22 @@ footer p {
 	margin-top: 2rem;
 }
 
+/* -------------------WSPOLPRACA------------------ */
+
+.iconConstruction{
+	font-size: 5rem;
+	width: 4rem;
+	text-align: left;
+}
+
+
 /* -------------------MEDIA QUERIES------------------ */
 @media (768px < width <= 1024px) {
-	#mainContainer {
+	.mainContainer {
 		flex-direction: column;
 		align-items: center;
 	}
-	#mainContainer > div {
+	.mainContainer > div {
 		min-height: auto;
 		width: 80dvw;
 	}
@@ -429,11 +438,11 @@ footer p {
 	#menuButton {
 		display: flex;
 	}
-	#mainContainer {
+	.mainContainer {
 		flex-direction: column;
 		align-items: center;
 	}
-	#mainContainer > div {
+	.mainContainer > div {
 		min-height: auto;
 		width: 85dvw;
 	}
