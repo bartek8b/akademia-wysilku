@@ -371,30 +371,28 @@ footer p {
 /* -------------------WSPOLPRACA------------------ */
 
 .iconConstructionLeft {
-	font-size: 5rem;
-	width: 40%;
+	font-size: 4rem;
 	animation: rotateLeft 7s linear infinite;
 }
 .iconConstructionRight {
-	font-size: 5rem;
-	width: 40%;
+	font-size: 4rem;
 	animation: rotateRight 7s linear infinite;
 }
 
 @keyframes rotateLeft {
 	from {
-		transform:rotate(360deg);
+		transform: rotate(360deg);
 	}
 	to {
-		transform:rotate(0deg);
+		transform: rotate(0deg);
 	}
 }
 @keyframes rotateRight {
 	from {
-		transform:rotate(0deg);
+		transform: rotate(30deg);
 	}
 	to {
-		transform:rotate(360deg);
+		transform: rotate(390deg);
 	}
 }
 /* -------------------MEDIA QUERIES------------------ */
