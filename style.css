@@ -371,11 +371,11 @@ footer p {
 /* -------------------WSPOLPRACA------------------ */
 
 .iconConstructionLeft {
-	font-size: 4rem;
+	font-size: 3rem;
 	animation: rotateLeft 7s linear infinite;
 }
 .iconConstructionRight {
-	font-size: 4rem;
+	font-size: 3rem;
 	animation: rotateRight 7s linear infinite;
 }
 
