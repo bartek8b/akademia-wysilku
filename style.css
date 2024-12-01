@@ -269,6 +269,7 @@ footer p {
 .albumCover {
 	display: block;
 	align-content: start;
+	align-items:first baseline;
 	cursor: pointer;
 	transform: scale(100%);
 	transition-duration: 0.5s;
@@ -338,7 +339,7 @@ footer p {
 	margin: auto;
 	overflow: auto;
 	border-collapse: collapse;
-	animation: scaleChange 0.5s;
+	animation: scaleChange 1s;
 }
 .offerTable td {
 	font-weight: normal;
@@ -351,7 +352,7 @@ footer p {
 }
 .offerClausure {
 	display: none;
-	animation: scaleChange 0.5s;
+	animation: scaleChange 1s;
 }
 .offerDetails {
 	text-align: center;
