@@ -317,6 +317,7 @@ footer p {
 
 /* -------------------OFERTA------------------ */
 .offerDiv {
+	display: block;
 	align-content: center;
 	cursor: pointer;
 	transform: scale(100%);
@@ -331,7 +332,6 @@ footer p {
 	font-size: 3rem;
 	width: 100%;
 	text-align: center;
-	transition: linear 0.5s;
 }
 .offerTable {
 	display: none;
