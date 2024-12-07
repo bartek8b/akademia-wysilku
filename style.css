@@ -21,7 +21,7 @@ body {
 img {
 	box-shadow: 1.5px 1.5px 1.5px hsl(0, 0%, 30%);
 	border-radius: 0.4rem;
-	animation: opacityChange 2s;
+	transition: linear 0.5s;
 }
 header {
 	background: linear-gradient(to left, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
