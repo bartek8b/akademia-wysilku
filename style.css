@@ -386,6 +386,7 @@ footer p {
 }
 .collabPhoto {
 	width: 70%;
+	height: auto;
 }
 
 .collabStory {
@@ -448,7 +449,8 @@ footer p {
 		height: auto;
 	}
 	.collabPhoto {
-		width: 50%;
+		width: auto;
+		height: 60dvh;
 	}
 }
 @media (width <= 768px) {
