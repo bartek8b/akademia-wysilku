@@ -13,15 +13,16 @@
 }
 body {
 	margin: 0;
+	height: 100dvh;
 	font-family: "Lato", "Open Sans", Helvetica, sans-serif;
 	background: url(images/background_desktop.jpg) no-repeat center center fixed;
 	background-size: cover;
-	transition: linear 0.5s;
+	transition: linear 0.3s;
 }
 img {
 	box-shadow: 1.5px 1.5px 1.5px hsl(0, 0%, 30%);
 	border-radius: 0.4rem;
-	transition: linear 0.5s;
+	transition: linear 0.3s;
 }
 header {
 	background: linear-gradient(to left, hsl(0, 0%, 40%), hsl(0, 0%, 60%));
@@ -41,7 +42,7 @@ nav li {
 	text-shadow: -1px -1px 1px hsl(0, 0%, 40%);
 	&:hover {
 		background-color: hsl(0, 0%, 80%);
-		animation: colorChange 0.5s;
+		animation: colorChange 0.3s;
 		border-radius: 0.7rem;
 		text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
 	}
@@ -75,7 +76,7 @@ nav a {
 	text-shadow: 1px 1px 1px hsl(0, 0%, 60%);
 	&:hover {
 		background-color: hsl(0, 0%, 80%);
-		animation: colorChange 0.5s;
+		animation: colorChange 0.3s;
 		border-radius: 0.7rem;
 		text-shadow: -1.5px -1.5px 2px hsl(0, 0%, 40%);
 	}
@@ -117,9 +118,9 @@ main {
 	);
 	border-radius: 0.7rem;
 	box-shadow: 1.5px 1.5px 1.5px hsl(0, 0%, 50%);
-	animation: opacityChange 1s;
+	animation: opacityChange 0.5s;
 	overflow: auto;
-	transition: linear 0.5s;
+	transition: linear 0.3s;
 }
 .mainContainer h5 {
 	margin: 0;
@@ -157,14 +158,14 @@ main {
 }
 .iconContact {
 	border-radius: 0.7rem;
-	transform: scale(100%) 0.5s;
-	transition-duration: 0.5s;
+	transform: scale(100%) 0.3s;
+	transition-duration: 0.3s;
 	&:hover {
 		background-color: hsl(0, 0%, 80%);
-		animation: colorChange 0.5s;
+		animation: colorChange 0.3s;
 		text-shadow: 1.5px 1.5px 2px hsl(0, 0%, 40%);
 		transform: scale(107%);
-		transition-duration: 0.5s;
+		transition-duration: 0.3s;
 	}
 }
 .italic {
@@ -190,11 +191,11 @@ footer i {
 	margin-right: 1.5rem;
 	color: hsl(0, 0%, 30%);
 	float: left;
-	transition: color 0.5s linear;
+	transition: color 0.3s linear;
 	&:hover {
 		color: black;
 		transform: scale(110%);
-		transition-duration: 0.5s;
+		transition-duration: 0.3s;
 	}
 }
 footer p {
@@ -269,13 +270,13 @@ footer p {
 .albumCover {
 	display: block;
 	align-content: start;
-	align-items:first baseline;
+	align-items: first baseline;
 	cursor: pointer;
 	transform: scale(100%);
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	&:hover {
 		transform: scale(105%);
-		transition-duration: 0.5s;
+		transition-duration: 0.3s;
 	}
 }
 .albumCover img {
@@ -308,11 +309,11 @@ footer p {
 	background-color: hsl(0, 0%, 80%);
 	cursor: pointer;
 	transform: scale(100%);
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	&:hover {
 		filter: brightness(120%);
 		transform: scale(110%);
-		transition-duration: 0.5s;
+		transition-duration: 0.3s;
 	}
 }
 
@@ -322,10 +323,10 @@ footer p {
 	align-content: center;
 	cursor: pointer;
 	transform: scale(100%);
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	&:hover {
 		transform: scale(105%);
-		transition-duration: 0.5s;
+		transition-duration: 0.3s;
 	}
 }
 
@@ -339,7 +340,7 @@ footer p {
 	margin: auto;
 	overflow: auto;
 	border-collapse: collapse;
-	animation: scaleChange 1s;
+	animation: scaleChange 0.5s;
 }
 .offerTable td {
 	font-weight: normal;
@@ -352,7 +353,7 @@ footer p {
 }
 .offerClausure {
 	display: none;
-	animation: scaleChange 1s;
+	animation: scaleChange 0.5s;
 }
 .offerDetails {
 	text-align: center;
