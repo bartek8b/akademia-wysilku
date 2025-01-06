@@ -319,8 +319,9 @@ footer p {
 /* -------------------OFERTA------------------ */
 .offerDiv {
 	display: block;
+	text-align: center;
 	align-content: center;
-	cursor: pointer;
+	cursor: default;
 	transform: scale(100%);
 	transition-duration: 0.3s;
 	&:hover {
@@ -371,13 +372,31 @@ footer p {
 
 /* -------------------WSPOLPRACA------------------ */
 
-.iconConstructionInt {
-	font-size: 3rem;
-	animation: rotateLeft 7s linear infinite;
+.collabDiv {
+	display: block;
+	text-align: center;
+	align-content: start;
+	cursor: default;
+	transform: scale(100%);
+	transition-duration: 0.3s;
+	&:hover {
+		transform: scale(105%);
+		transition-duration: 0.3s;
+	}
 }
-.iconConstructionExt {
-	font-size: 3rem;
-	animation: rotateRight 7s linear infinite;
+.collabPhoto {
+	width: 70%;
+}
+
+.collabStory {
+	display: none;
+	text-align: left;
+}
+.collabStory a {
+	text-decoration: none;
+	&:hover {
+		color: hsl(0, 0%, 20%);
+	}
 }
 
 @keyframes rotateLeft {
@@ -427,6 +446,9 @@ footer p {
 	#oMniePhoto {
 		min-width: 70%;
 		height: auto;
+	}
+	.collabPhoto {
+		width: 50%;
 	}
 }
 @media (width <= 768px) {
