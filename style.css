@@ -369,6 +369,9 @@ footer p {
 	margin-right: auto;
 	margin-top: 2rem;
 }
+.aboutMe {
+	padding-inline: 5rem;
+}
 
 /* -------------------WSPOLPRACA------------------ */
 
@@ -452,6 +455,9 @@ footer p {
 		width: auto;
 		height: 60dvh;
 	}
+	.collabStory, .aboutMe {
+		padding-inline: 4rem;
+	}
 }
 @media (width <= 768px) {
 	body {
@@ -489,6 +495,7 @@ footer p {
 		min-height: auto;
 		width: 85dvw;
 	}
+
 	footer i {
 		margin-right: 1rem;
 	}
@@ -504,5 +511,8 @@ footer p {
 	#oMniePhoto {
 		min-width: 90%;
 		height: auto;
+	}
+	.aboutMe {
+		padding-inline: 1rem;
 	}
 }
