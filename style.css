@@ -268,7 +268,7 @@ footer p {
 
 .albumCover {
 	display: block;
-	align-content: start;
+	align-content: center;
 	align-items: first baseline;
 	cursor: pointer;
 	transform: scale(100%);
@@ -277,10 +277,15 @@ footer p {
 		transform: scale(105%);
 		transition-duration: 0.3s;
 	}
+	&:active{
+		transform: scale(100%);
+	}
 }
 .albumCover img {
 	max-width: 100%;
 	max-height: 50dvh;
+	aspect-ratio: 4/5;
+	object-fit: cover;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -314,6 +319,9 @@ footer p {
 		transform: scale(110%);
 		transition-duration: 0.3s;
 	}
+	&:active{
+		transform: scale(100%);
+	}
 }
 
 /* -------------------OFERTA------------------ */
@@ -329,7 +337,6 @@ footer p {
 		transition-duration: 0.3s;
 	}
 }
-
 .iconOffer {
 	font-size: 3rem;
 	width: 100%;
@@ -378,7 +385,7 @@ footer p {
 .collabDiv {
 	display: block;
 	text-align: center;
-	align-content: start;
+	align-content: center;
 	cursor: default;
 	transform: scale(100%);
 	transition-duration: 0.3s;
@@ -388,8 +395,10 @@ footer p {
 	}
 }
 .collabPhoto {
-	width: 70%;
+	width: 80%;
 	height: auto;
+	aspect-ratio: 4 / 5;
+	object-fit: cover;
 }
 
 .collabStory {
@@ -444,6 +453,9 @@ footer p {
 	.iconHome {
 		width: 50%;
 	}
+	.albumCover img {
+		aspect-ratio: 5 / 4;
+	}
 	.offerTable {
 		width: fit-content;
 	}
@@ -455,7 +467,7 @@ footer p {
 		width: auto;
 		height: 60dvh;
 	}
-	.collabStory, .aboutMe {
+	.collabStory, .aboutMe, .aboutMeShort {
 		padding-inline: 4rem;
 	}
 }
