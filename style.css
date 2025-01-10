@@ -106,8 +106,8 @@ main {
 .mainContainer > div {
 	margin: 1.2rem;
 	padding: 2rem 2rem;
-	min-height: 75dvh;
-	width: 28dvw;
+	min-height: 75vh;
+	width: 28vw;
 	align-self: center;
 	color: black;
 	background: linear-gradient(
@@ -219,7 +219,7 @@ footer p {
 	top: 0;
 	right: 0;
 	height: auto;
-	width: 60dvw;
+	width: 60vw;
 	background: linear-gradient(to bottom, hsl(0, 0%, 60%), hsl(0, 0%, 40%));
 	border-radius: 0.7rem;
 	margin-top: 3rem;
@@ -438,7 +438,7 @@ footer p {
 	}
 	.mainContainer > div {
 		min-height: auto;
-		width: 80dvw;
+		width: 80vw;
 	}
 	#profilePhoto {
 		width: 25%;
@@ -507,7 +507,7 @@ footer p {
 	}
 	.mainContainer > div {
 		min-height: auto;
-		width: 85dvw;
+		width: 85vw;
 	}
 
 	footer i {
