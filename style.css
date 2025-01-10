@@ -283,7 +283,7 @@ footer p {
 }
 .albumCover img {
 	max-width: 100%;
-	max-height: 50dvh;
+	max-height: 50vh;
 	aspect-ratio: 4/5;
 	object-fit: cover;
 	display: block;
@@ -465,7 +465,7 @@ footer p {
 	}
 	.collabPhoto {
 		width: auto;
-		height: 60dvh;
+		height: 60vh;
 	}
 	.collabStory, .aboutMe, .aboutMeShort {
 		padding-inline: 4rem;
