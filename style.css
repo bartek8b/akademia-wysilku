@@ -299,6 +299,7 @@ footer p {
 	margin-right: auto;
 	max-height: 80dvh;
 	max-width: 80%;
+	animation: scaleChange 0.5s;
 }
 .galleryPrev,
 .galleryNext,
@@ -404,6 +405,7 @@ footer p {
 .collabStory {
 	display: none;
 	text-align: left;
+	animation: scaleChange 0.5s;
 }
 .collabStory a {
 	text-decoration: none;
